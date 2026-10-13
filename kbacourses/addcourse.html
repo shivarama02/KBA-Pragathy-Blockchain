@@ -4,77 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Course</title>
+    <style>
+        .body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav img{
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            overflow: auto;
+        }
+        nav img:hover{
+            box-shadow: 0px 0px 5px black;
+            border-radius: 10px;
+        }
+        nav{
+            background-color: #F0BDE0;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+        }
+        li a{
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+        }
+        li a:hover{
+            background-color: #9333EA;
+            border-radius: 5px;
+            color: white;
+            box-shadow: 0px 1px 5px black;
+        }
+        .addcourse{
+            background-color: #F0BDE0;
+            padding: 20px;
+            margin-top: 30px;
+            width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgb(111, 108, 108);
+
+        }
+        h1{
+            text-align: center;
+            color: #9333EA;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        label{
+            display: block;
+            margin: 10px 0px;        
+        }
+        input[type="text"], textarea, select{
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .log{
+            display: flex;
+            justify-content:center;
+            margin: 20px 0px;
+        }
+        input[type="submit"] {
+            background-color: #9333EA;
+            padding: 10px 30px;
+            color: white;
+            font-size: 15px;
+            border-radius: 50px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <table bgcolor="F0BDE0" width="100%" cellspacing="8">
-        <tr>
-            <td align="left">
-                <img src="kbalogo.png" alt="kbalogo" height="50" width="50">
-            </td>
-            <td align="right">
-                <a href="home.html">Home |</a>
-                <a href="courses.html">Courses |</a>
-                <a href="contactus.html">Contact Us |</a>
-                <a href="addcourse.html">Add Course |</a>
-                <a href="login.html">Logout |</a>
-            </td>
-        </tr>
-    </table>
-    <br><br><br>
-    <center>
-        <form action="courses.html">
-            <table bgcolor="F0BDE0" cellspacing="30">
-                <tr>
-                    <td colspan="2" align="center">
-                        <h1>Add Course</h1>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Course Name : </td>
-                    <td>
-                        <input type="text" placeholder="Enter course name "required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Course ID : </td>
-                    <td>
-                        <input type="text" placeholder="Enter course ID" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Course Type : </td>
-                    <td>
-                        <select name="course" required>
-                            <option value="c1">Self-placed</option>
-                            <option value="c2">Aidded</option>
-                            <option value="c3">Govt</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Description : </td>
-                    <td>
-                        <textarea rows="5" cols="30" placeholder="Enter a brief description"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Price : </td>
-                    <td>
-                        <select name="price">
-                            <option value="p1">5000</option>
-                            <option value="p2">7000</option>
-                            <option value="p3">8000</option>
-                            <option value="p4">10000</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="center">
-                        <input type="submit" value="Add Course">
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </center>
-</body>
+    <nav>
+        <div>
+            <img src="kbalogo.png" alt="kbalogo">
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="addcourse.html">Add Course</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="body">
+        <div class="addcourse">
+            <form action="courses.html">
+                <h1>Add Course</h1>
+
+                <Label for="name">Course Name : </Label>
+                <input type="text" id="name" placeholder="Enter course name "required>
+                
+                <label for="idd">Course ID : </label>
+                <input type="text" id="idd" placeholder="Enter course ID" required>
+                
+                <label for="type">Course Type : </label>
+                <select name="course" id="type" required>
+                    <option value="c1">Self-paced</option>
+                    <option value="c2">Aidded</option>
+                    <option value="c3">Govt</option>
+                </select>
+                
+                <label for="desc">Description : </label>
+                <textarea id="desc" rows="5" cols="30" placeholder="Enter a brief description"></textarea>
+                
+                
+                <label for="price">Price :</label> 
+                <select name="price" id="price" required>
+                        <option value="p1">5000</option>
+                        <option value="p2">7000</option>
+                        <option value="p3">8000</option>
+                        <option value="p4">10000</option>
+                </select>
+                
+                <div class="log">
+                    <input class="submit" type="submit" value="Add Course">
+                </div>
+            </form>
+        </div>
+    </div>
+    </body>
 </html>

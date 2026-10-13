@@ -4,55 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <style>
+        body{
+            background-color: #F0BDE0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
+        .login{
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 150px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgb(111, 108, 108);
+        }
+        h1{
+            text-align: center;
+            color: #9333EA;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        label{
+            display: block;
+            margin: 10px 0px;        
+        }
+        .intp, select{
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        
+        .log{
+            display: flex;
+            justify-content:start;
+            margin: 20px 0px;
+        }
+        .submit{
+            background-color: #9333EA;
+            padding: 10px 30px;
+            color: white;
+            font-size: 15px;
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+            padding: 10px 0px;
+            color: #9333EA;
+        }
+        .btxt{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <br><br><br><br><br><br><br>
-    <center>
-        <form action="login.html">
-            <table cellspacing="30" bgcolor="F54927">
-                <tr>
-                    <td colspan="2" align="center">
-                        <h1>Sign Up</h1>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Name : </td>
-                    <td>
-                        <input type="text" placeholder="Enter your name" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Email : </td>
-                    <td>
-                        <input type="email" placeholder="Enter your email" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Password : </td>
-                    <td>
-                        <input type="password" placeholder="Enter a new password" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Role : </td>
-                    <td>
-                        <select name="role" required>
-                            <option value="r1">Admin</option>
-                            <option value="r2">User</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                   <td></td>
-                   <td><input type="submit" value="Submit"></td> 
-                </tr>
-                <tr>
-                    <td colspan="2" align="center">
-                        Already have an account? <a href="login.html">Login</a>
-                    </td>
-                </tr>
-            </table>
+    <div class="login">
+        <form action="home.html">
+        <div>
+            <h1>Sign Up</h1>
+
+            <label for="name">Full Name :</label>
+            <input class="intp" type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email :</label>
+            <input class="intp" type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password : </label>
+            <input class="intp" type="password" id="password" placeholder="Enter your passowrd" required>
+            
+            <label for="role">Role : </label>
+            <select name="role" id="role" required>
+                <option value="r1">Admin</option>
+                <option value="r2">User</option>
+            </select>
+
+            <div class="log">
+                <input class="submit" type="submit" value="Sign Up">
+            </div>
+            
+            <div class="btxt">
+                Already have an Account? <a href="login.html">Login</a>
+            </div>
+        </div>
         </form>
-    </center>
+    </div>
 </body>
 </html>
