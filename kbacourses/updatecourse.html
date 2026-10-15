@@ -4,70 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update course</title>
+    <link rel="stylesheet" href="./stylecss/style.css">
 </head>
 <body>
-    <table width="100%" cellspacing="8">
-        <tr>
-            <td align="left">
-                <img src="kbalogo.png" alt="kbalogo" width="50" height="50">
-            </td>
-            <td align="right">
-                <a href="home.html">Home |</a>
-                <a href="courses.html">Courses |</a>
-                <a href="contactus.html">contact Us |</a>
-                <a href="addcourse.html">Add Course |</a>
-                <a href="login.html">Logout |</a>
-            </td>
-        </tr>
-    </table>
-    <center>
-        <form action="learnmore.html">
-            <table bgcolor="F0BDE0" cellspacing="30">
-                <tr>
-                    <td colspan="2" align="center">
-                        <h1>Update Course</h1>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Course Name : </td>
-                    <td>
-                        <input type="text" placeholder="Enter course anme">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Course Type : </td>
-                    <td>
-                        <select name="course">
-                            <option value="c1">Remote</option>
-                            <option value="c2">Hybrid</option>
-                            <option value="c3">Office</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Description : </td>
-                    <td>
-                        <textarea rows="5" cols="30" placeholder="Enter a brief description"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Price : </td>
-                    <td>
-                        <select name="price">
-                            <option value="p1">5000</option>
-                            <option value="p2">7000</option>
-                            <option value="p3">8000</option>
-                            <option value="p4">10000</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="center">
-                        <input type="submit" value="Update course">
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </center>
+    <nav>
+        <div>
+            <img src="./images/kbalogo.png" alt="kbalogo">
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="addcourse.html">Add Course</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="body">
+        <div class="addcourse">
+            <form action="courses.html">
+                <h1>Update Course</h1>
+
+                <Label for="name">Course Name : </Label>
+                <input type="text" id="name" placeholder="Enter course name "required>
+                
+                <label for="type">Course Type : </label>
+                <select name="course" id="type" required>
+                    <option value="c1">Self-paced</option>
+                    <option value="c2">Aidded</option>
+                    <option value="c3">Govt</option>
+                </select>
+                
+                <label for="desc">Description : </label>
+                <textarea id="desc" rows="5" cols="30" placeholder="Enter a brief description"></textarea>
+                
+                
+                <label for="price">Price :</label> 
+                <select name="price" id="price" required>
+                        <option value="p1">5000</option>
+                        <option value="p2">7000</option>
+                        <option value="p3">8000</option>
+                        <option value="p4">10000</option>
+                </select>
+                
+                <div class="log">
+                    <input class="submit" type="submit" value="Update Course">
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

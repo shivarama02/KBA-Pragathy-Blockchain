@@ -1,0 +1,68 @@
+body{
+    background-color: bisque;
+}
+.main{
+    background-color: azure;
+    height: 500px;
+    width: 400px;
+    padding: ;
+}
+.a{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    position: static;
+    top: 200px; /* its not applicable for position static*/
+}   
+.b{
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    position: relative;
+    top: 100px;
+    left: 200px /* relativily changes the position anywhere*/
+}   
+.c{
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    position: fixed;
+    left: 100px;/* cannot avoid from page its fixed there but can move tb,lr*/
+}   
+.d{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    position: absolute;
+    top: 350px;
+    left: 300px;
+}   
+.e{
+    background-color: cadetblue;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    position: sticky;
+    top: 0px;
+}
+
+
+
+.nav{
+    background-color:wheat;
+    padding: 20px;
+    position: relative;
+}
+.amazon{
+    position: relative;
+    left: 0;
+}
+.buy{
+    position: absolute;
+    right: 20px;
+    top: 0;
+}

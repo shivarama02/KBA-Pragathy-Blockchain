@@ -1,0 +1,241 @@
+    /* Navigation bar */
+    nav img{
+        height: 50px;
+        width: 50px;
+    }
+    nav img:hover{
+        box-shadow: 0px 0px 5px black;
+        border-radius: 10px;
+    }
+    nav{
+        background-color: #F0BDE0;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 5px;
+    }
+    nav ul{
+        display: flex;
+        list-style-type: none;
+    }
+    li a{
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+    }
+    li a:hover{
+        background-color: #9333EA;
+        border-radius: 5px;
+        color: white;
+        box-shadow: 0px 1px 5px black;
+    }
+
+
+    /* ALL Courses */
+    .heading{
+        background-color: #F0BDE0;
+        padding: 10px;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .card h1, 
+    .card h5{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #48117c;
+    }
+    .card h2, 
+    .card h3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #9333EA;
+        padding: 20px;
+        margin: 5px;
+    }
+    .all h1{
+        text-align: center;
+        color: black;
+    }
+    .card{
+        background-color: #F0BDE0;
+        width: 400px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0px 5px 10px black;
+        margin-left: 50px;
+        margin-bottom: 100px;
+    }
+    .card img{
+        height: 200px;
+        width: 200px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .card button{
+        background-color: #9333EA;
+        margin-bottom: 20px;
+        padding: 10px 30px;
+        color: white;
+        font-size: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+
+    }
+    .card button a{
+        text-decoration: none;
+        color: white;
+        margin-bottom: 10px;
+    }
+    
+
+    /* Add course, Update course */
+    .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .addcourse{
+        background-color: #F0BDE0;
+        padding: 20px;
+        margin-top: 30px;
+        width: 500px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgb(111, 108, 108);
+
+    }
+    .addcourse h1{
+        text-align: center;
+        color: #9333EA;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .addcourse label{
+        display: block;
+        margin: 10px 0px;        
+    }
+    .addcourse [type="text"], textarea, select{
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 5px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .log{
+        display: flex;
+        justify-content:center;
+        margin: 20px 0px;
+    }
+    .log input[type="submit"] {
+        background-color: #9333EA;
+        padding: 10px 30px;
+        color: white;
+        font-size: 15px;
+        border-radius: 50px;
+        width: 100%;
+    }
+
+
+
+    /* learnmore */
+    .learncourse{
+        margin: auto;
+        width: 50%;
+        padding: 20px;
+    }
+    .back2{
+        padding: 10px;
+    }
+    .card1{
+        background-color: #F0BDE0;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .card1 img{
+        height: 200px;
+        width: 200px;
+        box-sizing: border-box;
+    }
+    .cart{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        text-align: center;
+        height: 35px;
+        text-align: center;
+        width: 100%;
+    }
+    .cart15{
+        display: flex;
+        justify-content: center;
+
+    }
+    .card1 h2{
+        color: #9333EA;
+    }
+    .cart button{
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 0px 10px;
+    }
+    .cart p{
+        color: red;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .cart a{
+        text-decoration: none;
+        color: black;
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+    }
+    .btn1 {
+        text-align: center;
+        background-color: rgb(54, 54, 180);
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 0px 10px;
+    }
+    .btn2{
+        text-align: center;
+        background-color: rgb(180, 54, 54);
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 0px 10px;
+    }
+    .btn1 a{
+        text-decoration: none;
+        color: white;
+    }
+
+
+    /*Contact Us*/
+    .contact{
+        text-align: center;
+        margin: 100px;
+    }
+    .contact h4, .low{
+        color: #9333EA;
+    }
+    .tag{
+        margin: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .email{
+        text-align: center;
+    }
+    .email img{
+        padding:20px;
+    }
+    .email img:hover{
+        background-color: gray;
+        border-radius: 50%;
+    }

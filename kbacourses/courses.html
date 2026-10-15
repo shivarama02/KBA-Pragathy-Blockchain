@@ -4,47 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses</title>
+    <link rel="stylesheet" href="stylecss/style.css">
 </head>
 <body>
-    <table  bgcolor="F0BDE0" width="100%" cellspacing="8">
-        <tr>
-            <td align="left">
-                <img src="kbalogo.png" alt="kbalogo" height="50" width="50">
-            </td>
-            <td align="right">
-                <a href="home.html">Home |</a>
-                <a href="courses.html">Courses |</a>
-                <a href="contactus.html">Contact Us |</a>
-                <a href="addcourse.html">Add Course |</a>
-                <a href="login.html">Logout |</a>
-            </td>
-        </tr>
-    </table>
-    <center>
+    <nav>
+        <div>
+            <img src="./images/kbalogo.png" alt="kbalogo">
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="addcourse.html">Add Course</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="all">
         <h1>All Courses</h1>
-    </center>
-        <table bgcolor="F0BDE0" cellspacing="10">
-            <tr>
-                <td align="left"><h2>s122</h2></td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="rise_of_the_ronin_2024_video_game-wallpaper-5120x2880.jpg" alt="Thumbnail" height="200" width="400">
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <h3>11q...</h3>
-                </td>
-            </tr>
-            <tr>
-                <td>more</td>
-            </tr>
-            <tr>
-                <td>
-                    <button><a href="learnmore.html">Learn More</a></button>
-                </td>
-            </tr>
-        </table>
+    </div>
+
+        <div class="card">
+            <div class="top">
+                <h2>s122</h2>
+                <img src="./images/desktop-software-development-2.png" alt="Thumbnail">
+                <h3>11q...</h3>
+            </div>
+        
+            <div class="bottom">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur hic perferendis natus, beatae id nemo dolore dolor placeat, non commodi molestiae? Eaque corrupti explicabo quod perferendis qui accusamus dolorem odio!</p>
+            </div>
+
+                <button><a href="learnmore.html">Learn More</a></button>
+        </div>
+    </div>
 </body>
 </html>
