@@ -4,76 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Issue Certificate</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <center>
-        <table width="100%" cellspacing="8">
-            <tr>
-                <td align="right">
-                    <a href="frontpage.html">Home |</a>
-                    <a href="issuecertificate.html">Issue Certificate |</a>
-                    <a href="viewcertificate.html">Certificates |</a>
-                </td>
-            </tr>
-        </table>
-        <br><br><br><br>
-        <form action="viewcertificate.html">
-            <table cellspacing="30" bgcolor="E3939F">
-                <tr>
-                    <td colspan="2" align="center">
-                        <h1>Issue New Certificate</h1>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Select Course* : </td>
-                    <td>
-                        <select name="course">
-                            <option value="c1">Certified Blockchain Associate</option>
-                            <option value="c2">Certified Artificial Intelligence Associate</option>
-                            <option value="c3">Certified Mechine Learning Associate</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Certificate ID* : </td>
-                    <td>
-                        <input type="text" placeholder="Certificate ID" required>
-                    </td>
-                </tr> 
-                <tr>
-                    <td>Candidate Name* : </td>
-                    <td>
-                        <input type="text" placeholder="Name" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Select Grade* : </td>
-                    <td>
-                        <select name="grade">
-                            <option value="g1">S</option>
-                            <option value="g2">A+</option>
-                            <option value="g3">A</option>
-                            <option value="g4">B+</option>
-                            <option value="g5">B</option>
-                            <option value="g6">C+</option>
-                            <option value="g7">P</option>
-                            <option value="g8">F</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Issue Date* : </td>
-                    <td>
-                        <input type="date" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="center">
-                        <input type="submit" value="Issue Certificate">
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </center>
+    <div class="nav">
+        <div class="logo">
+            <img src="./images/certificate-3d-icon-png-download.png" alt="">
+            <h4>Certificate App</h4>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="issuecertificate.html">Issue Certificate</a></li>
+            <li><a href="viewcertificate.html">View Certificate</a></li>
+        </ul>
+    </div>
+    <div class="body">
+        <div class="card">
+            <form action="viewcertificate.html">
+                <h1>Issue New Certificate</h1>
+                <label for="course">Select Course* : </label>
+                <select name="course" id="course">
+                    <option value="c1">Certified Blockchain Associate</option>
+                    <option value="c2">Certified Artificial Intelligence Associate</option>
+                    <option value="c3">Certified Mechine Learning Associate</option>
+                </select>
+                
+                <label for="idd">Certificate ID* : </label>
+                <input type="text" id="idd" placeholder="Certificate ID" required>
+                
+                <label for="name">Candidate Name* : </label>
+                <input type="text" id="name" placeholder="Name" required>
+                
+                <label for="grade">Select Grade* : </label>
+                <select name="grade" id="grade">
+                    <option value="g1">S</option>
+                    <option value="g2">A+</option>
+                    <option value="g3">A</option>
+                    <option value="g4">B+</option>
+                    <option value="g5">B</option>
+                    <option value="g6">C+</option>
+                    <option value="g7">P</option>
+                    <option value="g8">F</option>
+                </select>
+                
+                <label for="date">Issue Date* : </label>
+                <input type="date" id="date" required>
+                <div class="log">
+                    <input type="submit" value="Issue Certificate">
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

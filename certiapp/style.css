@@ -1,0 +1,161 @@
+/*Navigation bar*/
+body{
+    background-color: antiquewhite;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h4{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10px;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+.logo img:hover{
+    filter: drop-shadow(0px 5px 5px black);
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+ul a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+ul a:hover{
+    background-color: #00aaff;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px black;
+}
+
+/*Certificate app ui*/
+.main{
+    text-align: center;
+}
+.main h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main img{
+    height: 300px;
+    width: 300px;
+    padding: 50px;
+    filter: grayscale(30%);
+}
+.main img:hover{
+    filter: grayscale(0%);
+}
+.inpt{
+    display: flex;
+    justify-content: center;
+}
+.inpt input{
+    padding: 10px;
+    border: #00aaff solid 1px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 200px;
+}
+.inpt button{
+    padding: 10px;
+    width: 100px;
+    background-color: #ffffff;
+    margin-left: 10px;
+    border: #00aaff solid 1px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.inpt button:hover{
+    background-color: #00aaff;
+    color: white;
+}
+
+/*Issue certificate ui*/
+    .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        background-color: #ffffff;
+        padding: 20px;
+        margin-top: 30px;
+        width: 500px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgb(111, 108, 108);
+
+    }
+    .card h1{
+        text-align: center;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .card label{
+        display: block;
+        margin: 10px 0px; 
+        font-family: Arial, Helvetica, sans-serif;       
+    }
+    .card input[type="text"], .card input[type="date"], textarea, select{
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 5px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .card input[type="text"]:hover, .card input[type="date"]:hover, textarea:hover, select:hover{
+        border: #00aaff solid 1px;
+    }
+    .log{
+        display: flex;
+        justify-content:start;
+        margin: 20px 0px;
+    }
+    .log input[type="submit"] {
+        background-color: white;
+        padding: 10px 30px;
+        color: black;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    .log input[type="submit"]:hover{
+        background-color: #00aaff;
+        color: #ffffff;
+    }
+    /*View Certificate*/
+
+    .certi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont{
+        background-color: #ffffff;
+        text-align: center;
+        padding: 30px;
+        width: 50%;
+        /* height: 500px; */
+        border-radius: 5px;
+    }
+    .cont h1{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+    }
+    .cont img{
+        padding: 30px;
+    }
+    span{
+        font-weight: bold;
+    }
+    
