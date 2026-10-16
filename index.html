@@ -3,15 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
+    <title>KBA Projects</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        .container {
+            width: min(100%, 700px);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 28px;
+            font-size: 32px;
+            color: #0f172a;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            padding: 28px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+        }
+
+        .card a {
+            padding: 16px;
+            color: #ffffff;
+            background: #2563eb;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+
+        .card a:hover {
+            background: #1d4ed8;
+        }
+    </style>
 </head>
 <body>
-    <ul>
-        <li><a href="./kbacourses/home.html">KBA Course</a></li>
-        <li><a href="./certiapp/home.html">Certi App</a></li>
-        <li><a href="./BookHub/home.html"></a></li>
-        <li></li>
-        <li></li>
-    </ul>
+    <main class="container">
+        <h1>KBA Projects</h1>
+
+        <div class="card">
+            <a href="./kbacourses/home.html">KBA Course</a>
+            <a href="./certiapp/home.html">Certi App</a>
+            <a href="./BookHub/home.html">BookHub</a>
+        </div>
+    </main>
 </body>
 </html>
