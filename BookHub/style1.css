@@ -1,0 +1,68 @@
+/*Login Page*/
+        .signlog{
+            background-color: #00a6ff9e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
+        .login{
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 100px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 2px #515050;
+        }
+        h1{
+            text-align: center;
+            color: #000000;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        span{
+            color: #00b3ff;
+        }
+        h2{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+        }
+        label{
+            display: block;
+            margin: 10px 0px;        
+        }
+        .intp, select{
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .log{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0px;
+        }
+        .submit{
+            background-color: #00b3ff;
+            padding: 10px 50px;
+            color: white;
+            font-size: 15px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            padding: 10px 0px;
+            color: #00b3ff;
+        }
+        .btxt{
+            text-align: center;
+        }
+        .btxt a{
+            text-decoration: none;
+            padding: 10px 0px;
+            color: #00b3ff;
+        }
+        .btxt{
+            text-align: center;
+        }

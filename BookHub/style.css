@@ -1,0 +1,186 @@
+
+
+        body{
+            padding: 80px;
+        }
+        /*Login Page*/
+        .signlog{
+            background-color: #00a6ff9e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
+        .login{
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 100px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 2px #515050;
+        }
+        h1{
+            text-align: center;
+            color: #000000;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        span{
+            color: #00b3ff;
+        }
+        h2{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+        }
+        label{
+            display: block;
+            margin: 10px 0px;        
+        }
+        .intp, select{
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .log{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0px;
+        }
+        .submit{
+            background-color: #00b3ff;
+            padding: 10px 50px;
+            color: white;
+            font-size: 15px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            padding: 10px 0px;
+            color: #00b3ff;
+        }
+        .btxt{
+            text-align: center;
+        }
+        .btxt a{
+            text-decoration: none;
+            padding: 10px 0px;
+            color: #00b3ff;
+        }
+        .btxt{
+            text-align: center;
+        }
+
+        /* Navigation bar */
+        
+        nav img{
+            height: 50px;
+            width: 50px;
+        }
+        nav img:hover{
+            box-shadow: 0px 0px 5px black;
+            border-radius: 20px;
+        }
+        nav{
+            background-color: #00a6ff9e;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 20px;
+            border: 1px solid;
+            border-radius: 20px;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            z-index: 1000;
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+        }
+        li a{
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+        }
+        li a:hover{
+            background-color: transparent;
+            border-radius: 5px;
+            color: black;
+            box-shadow: 0px 1px 5px black;
+        }
+
+        .cards{
+            display: flex;
+            justify-content: space-around;
+        }
+        .card{
+            text-align: center;
+            background-color: 00a6ff9e;
+            padding: 10PX;
+            border-radius: 10px;
+            width: 400px;
+            background-color: #00a6ff9e;
+        }
+        h3{
+            size: 10px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+        }
+        .card img{
+            height: 200px;
+            width: 150px;
+            border-radius: 10px;
+        }
+        .btn {
+            display: flex;
+            justify-content: center;
+        }
+        .btn1 {
+            text-align: center;
+            background-color: #00b3ff;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 0px 10px;
+        }
+        .btn2{
+            text-align: center;
+            background-color: #da1d1d;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 0px 10px;
+        }
+        .btn1 a, .btn2 a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .heading{
+            text-align: center;
+            padding: 30px;
+        }
+
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main1{
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 100px;
+            width: 400px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 2px #515050; */
+            border: 1px #000000 solid;
+        }
+        .bttn {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+
+        }

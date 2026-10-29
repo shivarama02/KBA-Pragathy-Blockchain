@@ -4,48 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="style1.css">
 </head>
-<body>
-    <br><br><br><br><br><br><br><br>
-    <center>
+<body class="signlog">
+    <div class="login">
         <form action="home.html">
-            <table bgcolor="B3DAFD" cellspacing="30">
-                <tr>
-                    <td colspan="2" align="center">
-                        <h1>Login</h1>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Email :
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Enter your email">
-                    </td>
-                </tr>
-                <tr>
-                <td>
-                    Password : 
-                </td>
-                <td>
-                    <input type="text" placeholder="Enter your passowrd">
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <input type="submit" value="Login">
-                </td>
-                <td align="right">
-                    <a href="Forgotpass.html">Forgot Password?</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
-                    Don't have an Account? <a href="Signup.html">Sign Up</a>
-                </td>
-            </tr>
-        </table>
-    </form>
-    </center>
+        <div>
+            <h1>Book<span>Hub</span></h1>
+            <h2>Login</h2>
+
+            <label for="email">Email :</label>
+            <input class="intp" type="email" id="email" placeholder="Enter your email">
+            
+            <label for="password">Password : </label>
+            <input class="intp" type="password" id="password" placeholder="Enter your passowrd">
+            <div class="log">
+                <input class="submit" type="submit" value="Login">
+                <a href="Forgotpass.html">Forgot Password?</a>
+            </div>
+            
+            <div class="btxt">
+                Don't have an Account? <a href="signup.html">Sign Up</a>
+            </div>
+        </div>
+        </form>
+    </div>
 </body>
 </html>
