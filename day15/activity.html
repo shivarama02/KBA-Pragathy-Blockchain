@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Activity</h1>
+    <h3>Q1:</h3>
+    <script>
+        //1.Program to print a para about yourself using createElement() , textContent & append child.
+
+        let para = document.createElement("p")
+        para.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum numquam aliquam commodi dignissimos nostrum, laudantium earum laborum necessitatibus. Ipsa porro perspiciatis vitae, optio culpa sequi nihil quia aliquid quam odit."
+        document.body.appendChild(para)
+    </script>
+    <h3>Q2:</h3>
+    <script>
+        //2.Make an unordered list of cinemas on html page using javascript.
+
+        let ul = document.createElement("ul")
+
+        let l1 = document.createElement("li")
+        l1.textContent = "ironman"
+        ul.appendChild(l1)
+
+        let l2 = document.createElement("li")
+        l2.textContent = "doomsday"
+        ul.appendChild(l2)
+
+        let l3 = document.createElement("li")
+        l3.textContent = "spiderman"
+        ul.appendChild(l3)
+
+        document.body.appendChild(ul)
+    </script>
+    <h3>Q3:</h3>
+    <script>
+        //3.Create a dropdown for programming language classes offered on html page using javascript.
+        
+        let language = document.createElement("select")
+
+        let op1 = document.createElement("option")
+        op1.textContent = "Python"
+        language.appendChild(op1)
+
+        let op2 = document.createElement("option")
+        op2.textContent = "Java"
+        language.appendChild(op2)
+
+        let op3 = document.createElement("option")
+        op3.textContent = "JavaScript"
+        language.appendChild(op3)
+
+        let op4 = document.createElement("option")
+        op4.textContent = "C"
+        language.appendChild(op4)
+
+        let op5 = document.createElement("option")
+        op5.textContent = "C++"
+        language.appendChild(op5)
+
+        document.body.appendChild(language)
+    </script>
+    <h3>Q4:</h3>
+    <script>
+        //4.Create radio buttons for KBA experience using javascript.
+
+        let good = document.createElement("input")
+        good.type = "radio"
+        good.name = "exp"
+        good.value = "Good"
+        document.body.appendChild(good)
+        document.body.appendChild(document.createTextNode("Good"))
+
+        let average = document.createElement("input")
+        average.type = "radio"
+        average.name = "exp"
+        average.value = "Average"
+        document.body.appendChild(average)
+        document.body.appendChild(document.createTextNode("Average"))
+
+        let bad = document.createElement("input")
+        bad.type = "radio"
+        bad.name = "exp"
+        bad.value = "Bad"
+        document.body.appendChild(bad)
+        document.body.appendChild(document.createTextNode("Bad"))
+    </script>
+    <h3>Q5:</h3>
+    <script>
+        //5.
+
+        let cake = document.createElement("select")
+
+        let c1 = document.createElement("option")
+        c1.textContent = "Black Forest"
+        cake.appendChild(c1)
+
+        let c2 = document.createElement("option")
+        c2.textContent = "White Forest"
+        cake.appendChild(c2)
+
+        let c3 = document.createElement("option")
+        c3.textContent = "Red Velvet"
+        cake.appendChild(c3)
+
+        document.body.appendChild(cake)
+        document.write("<br>Second option: " + cake.options[1].value)
+
+    </script>
+    <h3>Q6:</h3>
+    <script>
+        //6.
+
+        let fname = "Shiva"
+        let lname = "Rama"
+        document.write((fname + " " + lname).toUpperCase())
+    </script>
+    <h3>Q7:</h3>
+    <script>
+        //7.
+
+        let str = "You can study anything if you have a will to do it"
+
+        let s1 = str.substring(0, 13)
+        let s2 = str.substring(26, 29)
+        let s3 = str.substring(37, 41)
+        let s4 = str.substring(45)
+
+        document.write(s1 + " " + s2 + " " + s3 + " " + s4)
+
+    </script>
+    <h3>Q8:</h3>
+    <script>
+        //8.
+          
+        let t1 = "MongoDB is a decentralised distributed ledger. MongoDB can eliminate centralisation."
+
+        document.write(t1.replaceAll("MongoDB", "Blockchain"))
+    </script>
+    <h3>Q9:</h3>
+    <script>
+        let t2 = "MongoDB is a decentralised distributed ledger. MongoDB can eliminate centralisation."
+        
+        document.write(t2.substring(0, 46))
+        document.write("<br>")
+        document.write(t2.substr(0, 46))
+    </script>
+    <h3>Q10:</h3>
+    <script>
+        let a = "Hello World"
+        let b = "hEllO World"
+
+        let result = (a == b)
+
+        document.write("Result: " + result + "<br>")
+        document.write("Type: " + typeof result)
+    </script>
+    <h3>Q11:</h3>
+    <script>
+        let age = 23
+        let brother = age + 10
+        
+        document.write("I am " + age + " yrs of old and my brother is 10 yrs older to me. He is now " + brother + " years old.")
+    </script>
+    <h3>Q12:</h3>
+    <script>
+        let fname1 = "Shiva"
+        let lname1 = "Rama"
+        let place = "Kerala"
+
+        document.write("My name is " + (fname1 + " " + lname1).toUpperCase() + ". I live in " + place.toUpperCase())
+    </script>
+    <h3>Q13:</h3>
+    <script>
+        let str1 = "I like to play video games."
+        let str2 = "I don't like Hide & seek"
+
+        document.write(str1.replace("like", "don't like") + "<br>")
+        document.write(str2.replace("don't like", "like"))
+    </script>
+    <h3>Q14:</h3>
+    <script>
+        let a1 = 10
+        let b1 = 20
+        let temp
+
+        temp = a1
+        a1 = b1
+        b1 = temp
+
+        document.write("A = " + a1 + "<br>")
+        document.write("B = " + b1)
+    </script>
+    <h3>Q15:</h3>
+    <script>
+        let a2 = 10
+        let b2 = 20
+
+        a2 = a2 + b2
+        b2 = a2 - b2
+        a2 = a2 - b2
+
+        document.write("A = " + a2 + "<br>")
+        document.write("B = " + b2)
+    </script>
+    <h3>Q16:</h3>
+    <script>
+        let c = 30
+
+        let f = (c * 9 / 5) + 32
+
+        document.write("Fahrenheit = " + f)
+    </script>
+    <h3>Q17:</h3>
+    <script>
+        let n = 5
+
+        let square = n * n
+
+        document.write("Square = " + square)
+    </script>
+    <h3>Q18:</h3>
+    <script>
+
+        let cube = n * n * n
+
+        document.write("Cube = " + cube)
+    </script>
+    <h3>Q19:</h3>
+    <script>
+        let side = 5
+        document.write("Area of Square = " + (side * side) + "<br>")
+
+        let radius = 7
+        document.write("Area of Circle = " + (3.14 * radius * radius).toFixed(2) + "<br>")
+
+        let length = 10
+        let breadth = 5
+        document.write("Area of Rectangle = " + (length * breadth) + "<br>")
+
+        let base = 8
+        let height = 6
+        document.write("Area of Triangle = " + (0.5 * base * height))
+
+    </script>
+    <h3>Q20:</h3>
+    <script>
+        let s = 5
+        let lt = 10
+        let bt = 5
+        let r = 7
+
+        let x = 3
+        let y = 4
+        let z = 5
+
+        document.write("Perimeter of Square = " + (4 * s) + "<br>")
+        document.write("Perimeter of Rectangle = " + (2 * (lt + bt)) + "<br>")
+        document.write("Perimeter of Circle = " + (2 * 3.14 * r) + "<br>")
+        document.write("Perimeter of Triangle = " + (x + y + z))
+    </script>
+    <h3>Q21:</h3>
+    <script>
+        let pamount = 10000
+        let rate = 5
+        let time = 2
+
+        si = (pamount*rate*time)/100
+        document.write("Simple interest: ",si)
+
+        ci = pamount*Math.pow((1 + rate/100), time) - pamount
+        document.write("<br>Compund interest: ",ci)
+    </script>
+    <h3>Q22:</h3>
+    <script>
+        let n1 = 20
+        let n2 = 10
+        if(n1 > n2){
+            document.write(n1 + " is largest")
+        }
+        else if(n2 > n1){
+            document.write(n2 + " is largest")
+        }
+        else{
+            document.write("Both are equal")
+        }
+    </script>
+    <h3>Q23:</h3>
+    <script>
+        let x1=10,y1=90,z1=59
+
+        if(x1<y1 && x1<z1){
+            document.write(x1+ " is smallest")
+        }
+        else if(y1<z1 && y1<x1){
+            document.write(y1+ " is smallest")
+        }
+        else{
+            document.write(z1+ " is smallest")
+        }
+    </script>
+    <h3>Q24:</h3>
+    <script>
+        let number = -2
+        if(number > 0){
+            document.write("Positive number")
+        }
+        else if(number < 0){
+            document.write("Negative number")
+        }
+        else{
+            document.write("Zero")
+        }
+    </script>
+    <h3>Q25:</h3>
+    <script>
+        let age1 = 17
+        let result1 = age1>=18 ? document.write("Eligible for voting") : document.write("Not eligible for voting")
+    </script>
+    <h3>Q26:</h3>
+    <script>
+        let num1 = 20
+        let num2 = 35
+        let sum = num1 + num2
+        let numresult = (sum >= 50 && sum <= 80) ? 65 : 80
+        
+        document.write("Sum = ",sum)
+        document.write("<br>The result is ",numresult)
+    </script>
+    <h3>Q27:</h3>
+    <script>
+        let num11 = 21
+        if(num11 > 0 && (num11 % 3 == 0 || num11 % 7 == 0)){
+            document.write("The number is multiple of 3 and 7")
+        }
+        else{
+            document.write("The number is not multiple of 3 and 7")
+        }
+    </script>
+    <h3>Q28:</h3>
+    <script>
+        let k = -2
+        let l = 2
+        let m = 9
+
+        let product = k*l*m
+        if(product > 0){
+            document.write("The sign is '+'")
+        }
+        else if(product < 0){
+            document.write("The sign is '-'")
+        }
+    </script>
+    <h3>Q29:</h3>
+    <script>
+        let cgpa = 8
+        switch(cgpa){
+            case 10:
+                document.write("You got 10 cgpa")
+                break
+            case 9:
+                document.write("You got 9 cgpa")
+                break
+            case 8:
+                document.write("You got 8 cgpa")
+                break
+            case 7:
+                document.write("You got 7 cgpa")
+                break
+            default:
+                document.write("Invalid cgpa")
+                break
+        }
+    </script>
+    <h3>Q30</h3>
+    <script>
+        let month = 3
+        switch(month){
+            case 1:
+                document.write("January")
+                break
+            case 2:
+                document.write("February")
+                break
+            case 3:
+                document.write("March")
+                break
+            case 4:
+                document.write("April")
+                break
+            case 5:
+                document.write("May")
+                break
+            case 61:
+                document.write("June")
+                break
+            case 7:
+                document.write("July")
+                break
+            case 8:
+                document.write("August")
+                break
+            case 9:
+                document.write("September")
+                break
+            case 10:
+                document.write("October")
+                break
+            case 11:
+                document.write("November")
+                break
+            case 12:
+                document.write("December")
+                break
+        }
+    </script>
+    <h3>Q31</h3>
+    <script>
+        let j1 = 1
+        let j2 = -5
+        let j3 = 6
+
+        let d = b*b-4*a*c
+
+        if(d > 0){
+            let root1 = (-b + Math.sqrt(d)) / (2*a)
+            document.write("Root 1 is ",root1)
+
+            let root2 = (-b - Math.sqrt(d)) / (2*a)
+            document.write("Root 2 is ",root2)
+        }
+        else if(d == 0){
+            let root = -b / (2*a)
+            document.write("Equal roots ",roots)
+        }
+        else{
+            document.write("Roots are imaginary")
+        }
+    </script>
+    <h3>Q32:</h3>
+    <script>
+        let temperature = 25;
+
+        if (temperature < 0) {
+            document.write("Freezing weather");
+        }
+        else if (temperature < 10) {
+            document.write("Very Cold weather");
+        }
+        else if (temperature < 20) {
+            document.write("Cold weather");
+        }
+        else if (temperature < 30) {
+            document.write("Normal in temp");
+        }
+        else if (temperature < 40) {
+            document.write("Its Hot");
+        }
+        else {
+            document.write("Its Very Hot");
+        }
+    </script>
+</body>
+</html>

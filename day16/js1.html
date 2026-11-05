@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=10,b=90,c=59
+
+        if(a<b && a<c){
+            document.write(a+ " is smallest")
+        }
+        else if(b<c && b<a){
+            document.write(b+ " is smallest")
+        }
+        else{
+            document.write(c+ " is smallest")
+        }
+
+        document.write("<br><br>")
+
+        let account = 20000
+        let withdraw = 200012
+        let limit = 25000
+
+        if(withdraw > account){
+            document.write("Insufficient balance")
+            document.write("<br>Balance : "+account)
+        }
+        else if(withdraw > limit){
+            document.write("Limit exceeded")
+        }
+        else if(withdraw % 100 !== 0){
+            document.write("Withdrawal amount must be a multiple of 100")
+        }
+        else{
+            document.write("The amount debited from your account succesfully")
+            document.write("<br>Balance : "+(account - withdraw))
+        }
+    
+
+        let buy = 4999
+        let discount = 0
+
+        if(buy >= 1000 && buy <= 2000){
+            discount = buy * 0.10
+        }
+        else if(buy > 2000 && buy <= 3000){
+            discount = buy * 0.20
+        }
+        else if(buy > 3000 && buy <= 4000){
+            discount = buy * 0.30
+        }
+        else if(buy > 4000 && buy <= 5000){
+            discount = buy * 0.10
+        }
+        else if(buy > 5000){
+            discount = buy * 0.50
+        }
+
+        let decimal = discount % 1
+        console.log(decimal)
+        document.write("<br>",decimal)
+        if(decimal >= 0.5){
+            document.write("<br>",discount)
+            discount = discount - decimal + 1
+            document.write("<br>",discount)
+        }
+        else{
+            discount = discount - decimal
+        }
+        
+        document.write("<br><br>Purchase amount : " + buy)
+        document.write("<br>Discount%: " + discount)
+        document.write("<br>Amount to pay : " + (buy - discount))
+    </script>
+</body>
+</html>

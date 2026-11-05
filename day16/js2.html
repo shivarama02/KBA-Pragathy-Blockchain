@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = 2
+        switch(x){
+            case 1:
+                document.write("One")
+                break;
+            case 2:
+                document.write("Two")
+                break;
+            case 3:
+                document.write("Three")
+                break;
+            case 4:
+                document.write("Four")
+                break;
+            case 5:
+                document.write("Five")
+                break;
+            default:
+                document.write("The value is not in within 1 & 5")
+                break;
+        }
+    </script>
+    <br><br>
+    <script>
+        op = '/'
+        let a = 10
+        let b = 20
+
+        switch(op){
+            case '+':
+                sum = a + b
+                document.write("Sum is ",sum)
+                break;
+            case '*':
+                prod = a * b
+                document.write("Product is ",prod)
+                break;
+            case '-':
+                diff = a - b
+                document.write("Difference is",diff)
+                break;
+            case '/':
+                if(b==0){
+                    document.write("Connot divided by zero")
+                }
+                else{
+                    div = a / b
+                    document.write("Division is ",div)
+                }
+                break;
+            default:
+                document.write("Invalid operator")
+                break;
+        }
+    </script>
+    <br><br>
+    <script>
+        let n = 7
+        switch(n%2){
+            case 0:
+                document.write(n," is even number")
+                break;
+            case 1:
+                document.write(n," is odd number")
+                break;
+            default:
+                document.write("Invalid number!")
+        }
+    </script>
+</body>
+</html>

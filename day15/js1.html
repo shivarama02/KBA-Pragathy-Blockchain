@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <div id="temp"></div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum numquam aliquam commodi dignissimos nostrum, laudantium earum laborum necessitatibus. Ipsa porro perspiciatis vitae, optio culpa sequi nihil quia aliquid quam odit.</p>
+    <div id="text1"></div>
+    <script>
+        e1 = document.createElement("h1")
+        e1.textContent = "Java Script"
+        d1 = document.getElementById("temp")
+        d1.appendChild(e1)
+
+        e2 = document.createElement("h2")
+        e2.textContent = "Java Script has 3 data types:"
+        d2 = document.getElementById("text1")
+        d2.appendChild(e2)
+
+        e3 = document.createElement("ul")
+
+        e4 = document.createElement("li")
+        e4.textContent = "Number"
+        e3.appendChild(e4)
+        e5 = document.createElement("li")
+        e5.textContent = "String"
+        e3.appendChild(e5)
+        e6 = document.createElement("li")
+        e6.textContent = "Boolean"
+        e3.appendChild(e6)
+
+        d2.appendChild(e3)
+    </script>
+</body>
+</html>

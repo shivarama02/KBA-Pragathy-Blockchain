@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condition statement</title>
+</head>
+<body>
+    <script>
+        let x = 12
+        if (x % 2 == 0) {
+            document.write(x," is even")
+        }
+        else{
+            document.write(x," is odd")
+        }
+        document.write("<br><br>")
+
+        let a = 12
+        let b = 10
+        let c = 18
+        if(a > b){
+            if(a > c){
+                document.write(a," is greater")
+            }
+            else{
+                document.write(c, " is greater")
+            }
+        }
+        else if(b > c){
+            document.write(b," is greater")
+        }
+        
+        
+        document.write("<br><br>")
+
+        let mark = 67
+        if(mark >= 90){
+            document.write("Grade: A+")
+        }
+        else if(mark >= 80 && mark < 90){
+            document.write("Grade: A")
+        }
+        else if(mark >= 70 && mark < 80){
+            document.write("Grade: B+")
+        }
+        else if(mark >= 60 && mark < 70){
+            document.write("Grade: B")
+        }
+        else if(mark >= 50 && mark < 60){
+            document.write("Grade: C+")
+        }
+        else if(mark >= 40 && mark < 50){
+            document.write("Grade: C")
+        }
+        else if(mark >= 30 && mark < 40){
+            document.write("Grade: p")
+        }
+        else{
+            document.write("Grade: F")
+        }
+
+    </script>
+</body>
+</html>

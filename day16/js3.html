@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ternary operator</h1>
+    <script>
+        let a=10,b=20,c=5,larger,smaller
+        larger = a > b ? (a > c ? a : c) : (b > c ? b : c)
+        document.write(larger, " is largest number")
+        
+        document.write("<br><br>")
+        
+        smaller = a < b ? (a < c ? a : c) : (b < c ? b : c)
+        document.write(smaller, " is smallest number")
+
+        document.write("<br><br>")
+
+        let n=4,value
+        value = n%2==0 ? document.write(n," is even number"):document.write(n," is odd number")
+        
+    </script>
+</body>
+</html>

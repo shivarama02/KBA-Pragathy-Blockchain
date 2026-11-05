@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>Array</h1>")
+        
+        let x = [2,4,6,8]
+        document.write("<br>The element in 2nd position: ",x[1])
+        x.push(11)
+        document.write("<br>Pushed 11 to the Array: ",x)
+        x.pop()
+        document.write("<br>Poped element from array: ",x)
+        sum = x[1]+x[2]
+        document.write("<br>the sum of 2 elements of 2nd and 3rd position: ",sum)
+        
+        document.write("<br><br>")
+        document.write("<h1>String</h1>")
+
+        let st = "Hello! How are you?"
+        l = st.length
+        document.write("The string: ",st)
+        document.write("<br>The character at 3rd position: ",st[2])
+        document.write("<br>Length oḟthe string: ",l)
+        document.write("<br>The character at 5th position: ",st.charAt(4))
+        document.write("<br>The substring from 7th position: ",st.substring(7))
+        document.write("<br>The substring from 7th to 14th position: ",st.substring(7,14))
+        document.write("<br>The slice from 7th position: ",st.slice(7))
+        document.write("<br>The slice from 7th to 14th position: ",st.slice(7,14))
+        document.write("<br> teachers says: ",st.slice(0,5)+' '+st.slice(15,18)+st.slice(5,6))
+        document.write("<br>Uppercase: ",st.toUpperCase())
+        document.write("<br>Lowercase: ",st.toLowerCase())
+        document.write("<br>Split using space: ",st.split(' '))
+        document.write("<br>Search the string 'how': ",st.search(/How /g ))
+        document.write("<br>Replace 'How' with 'Who': ",st.replace(/How /g, "Who " ))
+        let n = " are you fine?"
+        document.write("<br>Concat: ",st.concat(n))
+        
+    </script>
+</body>
+</html>
