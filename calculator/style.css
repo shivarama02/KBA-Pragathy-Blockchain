@@ -30,7 +30,7 @@ body{
     border-color: #cecdcd;
     display: flex;
     justify-content: right;
-    padding: 10px 20px;
+    padding: 5px 10px;
     font-size: 35px;
     box-shadow: inset 3px 3px 10px black;
     position: relative;
