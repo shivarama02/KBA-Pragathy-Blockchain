@@ -4,61 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Books</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <nav>
+<body class="p-[80px]">
+    <nav class="bg-[#00a6ff9e] flex justify-between px-[20px] py-0 border border-solid rounded-[20px] fixed top-[10px] left-[10px] right-[10px] z-[1000]">
         <div>
-            <img src="./images/booklogo.png" alt="kbalogo">
+            <img src="./images/booklogo.png" alt="kbalogo" class="h-[50px] w-[50px]">
         </div>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="Viewbooks.html">Books</a></li>
-            <li><a href="Addbooks.html">Add Book</a></li>
-            <li><a href="login.html">Logout</a></li>
+        <ul class="flex list-none my-4 pl-10">
+            <li><a class="no-underline p-[10px] text-black hover:bg-transparent hover:rounded-[20px] hover:text-black hover:shadow-[0px_1px_5px_black]" href="home.html">Home</a></li>
+            <li><a class="no-underline p-[10px] text-black hover:bg-transparent hover:rounded-[20px] hover:text-black hover:shadow-[0px_1px_5px_black]" href="Viewbooks.html">Books</a></li>
+            <li><a class="no-underline p-[10px] text-black hover:bg-transparent hover:rounded-[20px] hover:text-black hover:shadow-[0px_1px_5px_black]" href="Addbooks.html">Add Book</a></li>
+            <li><a class="no-underline p-[10px] text-black hover:bg-transparent hover:rounded-[20px] hover:text-black hover:shadow-[0px_1px_5px_black]" href="login.html">Logout</a></li>
         </ul>
     </nav>
     <div>
-        <div class="heading">
+        <div class="text-center p-[30px]">
             <!-- <h1>Book<span>Hub</span></h1> -->
-            <h2>Books</h2>
+            <h2 class="text-center text-black font-[Verdana,Geneva,Tahoma,sans-serif] font-bold ">Books</h2>
         </div>
-
-        <div class="cards">
-            <div class="card">
-                <h3>RAM C/O ANANDHI</h3>
-                <img src="./images/61De10B-ooL._SY425.png" alt=Ram C/O Anandhi" height="400px" width="300px">
+        <div class="flex justify-around">
+            <div class="text-center bg-[#00a6ff9e] p-[10px] rounded-[10px] w-[400px] flex flex-col items-center gap-4">
+                <h3 class="text-center font-[Verdana,Geneva,Tahoma,sans-serif] text-black text-[20px] font-medium">RAM C/O ANANDHI</h3>
+                <img class="h-[200px] w-[150px] rounded-[10px] mx-auto" src="./images/61De10B-ooL._SY425.png" alt="Ram C/O Anandhi" height="400px" width="300px">
                 <p><b>Title : </b>Ram C/O Anandhi</p>
                 <p><b>Author : </b>Akhil P. Dharmajan</p>
                 <p><b>ISBN : </b>978-8126475568</p>
                 <p><b>Category : </b>Romance</p>
-                <div class="btn">
-                    <button class="btn1"><a href="editbooks.html">Edit</a></button>
-                    <button class="btn2"><a href="">Delete</a></button>
+                <div class="text-center text-white p-[10px] rounded-[10px] mx-[10px]">
+                    <button class="text-center bg-[#00b3ff] text-white p-[10px] rounded-[10px] mx-[10px]"><a href="editbooks.html">Edit</a></button>
+                    <button class="text-center bg-[#da1d1d] text-white p-[10px] rounded-[10px] mx-[10px]"><a href="">Delete</a></button>
                 </div>
             </div>
-            <div class="card">
-                <h3>ETTAVUM PRIYAPPETTA ENNOD</h3>
-                <img src="./images/61iGrGGBf3L._SY466.png" alt="Ettavum Priyappetta Ennod"  height="400px" width="300px" >
+            <div class="text-center bg-[#00a6ff9e] p-[10px] rounded-[10px] w-[400px] flex flex-col items-center gap-4">
+                <h3 class="text-center font-[Verdana,Geneva,Tahoma,sans-serif] text-black text-[20px] font-medium">ETTAVUM PRIYAPPETTA ENNOD</h3>
+                <img class="h-[200px] w-[150px] rounded-[10px] mx-auto" src="./images/61iGrGGBf3L._SY466.png" alt="Ettavum Priyappetta Ennod"  height="400px" width="300px" >
                 <p><b>Title : </b>Ettavum Priyappetta Ennod</p>
                 <p><b>Author : </b>Nimna Vijay</p>
                 <p><b>ISBN : </b>978-8196510565</p>
                 <p><b>Category : </b>Classic Fiction</p>
-                <div class="btn">
-                    <button class="btn1"><a href="editbooks.html">Edit</a></button>
-                    <button class="btn2"><a href="">Delete</a></button>
+                <div class="text-center text-white p-[10px] rounded-[10px] mx-[10px]">
+                    <button class="text-center bg-[#00b3ff] text-white p-[10px] rounded-[10px] mx-[10px]"><a href="editbooks.html">Edit</a></button>
+                    <button class="text-center bg-[#da1d1d] text-white p-[10px] rounded-[10px] mx-[10px]"><a href="">Delete</a></button>
                 </div>
             </div>
-            <div class="card">
-                <h3>ABHI ANU ANANDAM</h3>
-                <img src="./images/513WFUexQXL._SY466.png" alt="Abhi Anu Anandam" height="400px" width="300px" >
+            <div class="text-center bg-[#00a6ff9e] p-[10px] rounded-[10px] w-[400px] flex flex-col items-center gap-4">
+                <h3 class="text-center font-[Verdana,Geneva,Tahoma,sans-serif] text-black text-[20px] font-medium">ABHI ANU ANANDAM</h3>
+                <img class="h-[200px] w-[150px] rounded-[10px] mx-auto" src="./images/513WFUexQXL._SY466.png" alt="Abhi Anu Anandam" height="400px" width="300px" >
                 <p><b>Title : </b>Abhi Anu Anandam</p>
                 <p><b>Author : </b>Amal Dev C S</p>
                 <p><b>ISBN : </b>9788198586971</p>
                 <p><b>Category : </b>Romance</p>
-                <div class="btn">
-                    <button class="btn1"><a href="editbooks.html">Edit</a></button>
-                    <button class="btn2"><a href="">Delete</a></button>
+                <div class="text-center text-white p-[10px] rounded-[10px] mx-[10px]">
+                    <button class="text-center bg-[#00b3ff] text-white p-[10px] rounded-[10px] mx-[10px]"><a href="editbooks.html">Edit</a></button>
+                    <button class="text-center bg-[#da1d1d] text-white p-[10px] rounded-[10px] mx-[10px]"><a href="">Delete</a></button>
                 </div>
             </div>
         </div>

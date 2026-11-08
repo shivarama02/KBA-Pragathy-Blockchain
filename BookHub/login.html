@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style1.css">
+    <!-- <link rel="stylesheet" href="style1.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="signlog">
-    <div class="login">
+<body class="bg-[#00a6ff9e] flex justify-center items-center">
+    <div class="bg-white p-5 mt-[150px] w-100 rounded-[10px] shadow-[10px_10px_2px_#515050]">
         <form action="home.html">
         <div>
-            <h1>Book<span>Hub</span></h1>
-            <h2>Login</h2>
+            <h1 class="text-center text-black font-[Verdana,Geneva,Tahoma,sans-serif] text-[30px] font-bold ">Book<span class="text-[#00b3ff]">Hub</span></h1>
+            <h2 class="text-center text-black font-[Verdana,Geneva,Tahoma,sans-serif] font-bold">Login</h2>
 
-            <label for="email">Email :</label>
-            <input class="intp" type="email" id="email" placeholder="Enter your email">
+            <label for="email" class="block my-[10px]">Email :</label>
+            <input class="p-[10px] border border-solid rounded-[5px] box-border w-full" type="email" id="email" placeholder="Enter your email">
             
-            <label for="password">Password : </label>
-            <input class="intp" type="password" id="password" placeholder="Enter your passowrd">
-            <div class="log">
-                <input class="submit" type="submit" value="Login">
-                <a href="Forgotpass.html">Forgot Password?</a>
+            <label for="password" class="block my-[10px]">Password : </label>
+            <input class="p-[10px] border border-solid rounded-[5px] box-border w-full" type="password" id="password" placeholder="Enter your passowrd">
+            <div class="flex justify-between my-[20px]">
+                <input class="bg-[#00b3ff] px-[50px] py-[10px] text-white text-[15px] rounded-[20px] cursor-pointer" type="submit" value="Login">
+                <a href="Forgotpass.html" class="py-[10px] text-[#00b3ff]">Forgot Password?</a>
             </div>
             
-            <div class="btxt">
-                Don't have an Account? <a href="signup.html">Sign Up</a>
+            <div class="text-center">
+                Don't have an Account? <a href="signup.html" class="text-[#00b3ff]">Sign Up</a>
             </div>
         </div>
         </form>

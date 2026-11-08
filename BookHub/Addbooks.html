@@ -4,37 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Books</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <nav>
+    <nav class="bg-[#00a6ff9e] flex justify-between px-[20px] py-0 border border-solid rounded-[20px] fixed top-[10px] left-[10px] right-[10px] z-[1000]">
         <div>
-            <img src="./images/booklogo.png" alt="kbalogo">
+            <img src="./images/booklogo.png" alt="kbalogo" class="h-[50px] w-[50px]">
         </div>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="Viewbooks.html">Books</a></li>
-            <li><a href="Addbooks.html">Add Book</a></li>
-            <li><a href="login.html">Logout</a></li>
+        <ul class="flex list-none my-4 pl-10">
+            <li><a class="no-underline p-[10px] text-black hover:bg-transparent hover:rounded-[20px] hover:text-black hover:shadow-[0px_1px_5px_black]" href="home.html">Home</a></li>
+            <li><a class="no-underline p-[10px] text-black hover:bg-transparent hover:rounded-[20px] hover:text-black hover:shadow-[0px_1px_5px_black]" href="Viewbooks.html">Books</a></li>
+            <li><a class="no-underline p-[10px] text-black hover:bg-transparent hover:rounded-[20px] hover:text-black hover:shadow-[0px_1px_5px_black]" href="Addbooks.html">Add Book</a></li>
+            <li><a class="no-underline p-[10px] text-black hover:bg-transparent hover:rounded-[20px] hover:text-black hover:shadow-[0px_1px_5px_black]" href="login.html">Logout</a></li>
         </ul>
     </nav>
-    <div class="main">
-        <div class="main1">
+    <div class="flex justify-center items-center">
+        <div class="bg-white p-5 mt-25 w-100 rounded-[10px] border border-solid border-[#000000]">
             <form action="Viewbooks.html">
                 <div>
-                    <h1>Add Book</h1>
+                    <h1 class="text-center text-black font-[Verdana,Geneva,Tahoma,sans-serif] text-[30px] font-bold ">Add Book</h1>
                     
-                    <label for="">Title</label>
-                    <input class="intp" type="text" placeholder="Enter title here" required>
+                    <label class="block my-[10px]" for="">Title</label>
+                    <input class="p-[10px] border border-solid rounded-[5px] box-border w-full" type="text" placeholder="Enter title here" required>
 
-                    <label for="">Author</label>
-                    <input class="intp" type="text" placeholder="Enter author name" required>
+                    <label class="block my-[10px]" for="">Author</label>
+                    <input class="p-[10px] border border-solid rounded-[5px] box-border w-full" type="text" placeholder="Enter author name" required>
                     
-                    <label for="">ISBN</label>
-                    <input class="intp" type="text" placeholder="Enter ISBN Number" required>
+                    <label class="block my-[10px]" for="">ISBN</label>
+                    <input class="p-[10px] border border-solid rounded-[5px] box-border w-full" type="text" placeholder="Enter ISBN Number" required>
                     
-                    <label for="">Category</label>
-                    <select name="category" required>
+                    <label class="block my-[10px]" for="">Category</label>
+                    <select class="p-[10px] border border-solid rounded-[5px] box-border w-full" name="category" required>
                         <option value="c1">Fiction</option>
                         <option value="c2">Non-Fiction</option>
                         <option value="c3">Academic</option>
@@ -43,9 +44,9 @@
                         <option value="c6">Travel</option>
                         <option value="cccccc7">Cultural</option>
                     </select>
-                    <div class="bttn">
-                        <input class="btn1" type="submit" value="Add Book">
-                        <input class="btn2" type="reset" value="Cancel">
+                    <div class="flex justify-center p-5">
+                        <input class="text-center bg-[#00b3ff] text-white p-[10px] rounded-[10px] mx-[10px]" type="submit" value="Add Book">
+                        <input class="text-center bg-[#da1d1d] text-white p-[10px] rounded-[10px] mx-[10px]" type="reset" value="Cancel">
                     </div>
                 </div>
             </form>
