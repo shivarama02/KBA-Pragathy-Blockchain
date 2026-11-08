@@ -4,79 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Books</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table bgcolor="B3DAFD" width="100%" cellpadding="10">
-        <tr>
-            <td>
-                <img src="./images/booklogo.png" alt="booklogo" height="30" width="30">
-            </td>
-            <td align="right">
-                <a href="home.html">Home |</a>
-                <a href="Viewbooks.html">Books |</a>
-                <a href="Addbooks.html">Add Book |</a>
-                <a href="Login.html">Logout |</a>
-            </td>
-        </tr>
-    </table>
-    <center>
-        <table width="50%" cellspacing="50">
-            <tr>
-                <td>
-                    <h1>Books</h1>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table bgcolor="B3DAFD" cellspacing="50">
-                        <tr>
-                            <td align="center">
-                                <h3>RAM C/O ANANDHI</h3>
-                                <img src="./images/61De10B-ooL._SY425.png" alt=Ram C/O Anandhi" height="400px" width="300px">
-                                <p><b>Title : </b>Ram C/O Anandhi</p>
-                                <p><b>Author : </b>Akhil P. Dharmajan</p>
-                                <p><b>ISBN : </b>978-8126475568</p>
-                                <p><b>Category : </b>Romance</p>
-                                <button><a href="editbooks.html">Edit</a></button>
-                                <button><a href="">Delete</a></button>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table bgcolor="B3DAFD" cellspacing="50">
-                        <tr>
-                            <td align="center">
-                                <h3>ETTAVUM PRIYAPPETTA ENNOD</h3>
-                                <img src="./images/61iGrGGBf3L._SY466.png" alt="Ettavum Priyappetta Ennod"  height="400px" width="300px" >
-                                <p><b>Title : </b>Ettavum Priyappetta Ennod</p>
-                                <p><b>Author : </b>Nimna Vijay</p>
-                                <p><b>ISBN : </b>978-8196510565</p>
-                                <p><b>Category : </b>Classic Fiction</p>
-                                <button><a href="editbooks.html">Edit</a></button>
-                                <button><a href="">Delete</a></button>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table bgcolor="B3DAFD" cellspacing="50">
-                        <tr>
-                            <td align="center">
-                                <h3>ABHI ANU ANANDAM</h3>
-                                <img src="./images/513WFUexQXL._SY466.png" alt="Abhi Anu Anandam" height="400px" width="300px" >
-                                <p><b>Title : </b>Abhi Anu Anandam</p>
-                                <p><b>Author : </b>Amal Dev C S</p>
-                                <p><b>ISBN : </b>9788198586971</p>
-                                <p><b>Category : </b>Romance</p>
-                                <button><a href="editbooks.html">Edit</a></button>
-                                <button><a href="">Delete</a></button>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </center>
+    <nav>
+        <div>
+            <img src="./images/booklogo.png" alt="kbalogo">
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Viewbooks.html">Books</a></li>
+            <li><a href="Addbooks.html">Add Book</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+    <div>
+        <div class="heading">
+            <!-- <h1>Book<span>Hub</span></h1> -->
+            <h2>Books</h2>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>RAM C/O ANANDHI</h3>
+                <img src="./images/61De10B-ooL._SY425.png" alt=Ram C/O Anandhi" height="400px" width="300px">
+                <p><b>Title : </b>Ram C/O Anandhi</p>
+                <p><b>Author : </b>Akhil P. Dharmajan</p>
+                <p><b>ISBN : </b>978-8126475568</p>
+                <p><b>Category : </b>Romance</p>
+                <div class="btn">
+                    <button class="btn1"><a href="editbooks.html">Edit</a></button>
+                    <button class="btn2"><a href="">Delete</a></button>
+                </div>
+            </div>
+            <div class="card">
+                <h3>ETTAVUM PRIYAPPETTA ENNOD</h3>
+                <img src="./images/61iGrGGBf3L._SY466.png" alt="Ettavum Priyappetta Ennod"  height="400px" width="300px" >
+                <p><b>Title : </b>Ettavum Priyappetta Ennod</p>
+                <p><b>Author : </b>Nimna Vijay</p>
+                <p><b>ISBN : </b>978-8196510565</p>
+                <p><b>Category : </b>Classic Fiction</p>
+                <div class="btn">
+                    <button class="btn1"><a href="editbooks.html">Edit</a></button>
+                    <button class="btn2"><a href="">Delete</a></button>
+                </div>
+            </div>
+            <div class="card">
+                <h3>ABHI ANU ANANDAM</h3>
+                <img src="./images/513WFUexQXL._SY466.png" alt="Abhi Anu Anandam" height="400px" width="300px" >
+                <p><b>Title : </b>Abhi Anu Anandam</p>
+                <p><b>Author : </b>Amal Dev C S</p>
+                <p><b>ISBN : </b>9788198586971</p>
+                <p><b>Category : </b>Romance</p>
+                <div class="btn">
+                    <button class="btn1"><a href="editbooks.html">Edit</a></button>
+                    <button class="btn2"><a href="">Delete</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update course</title>
+    <link rel="stylesheet" href="./stylecss/style.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="./images/kbalogo.png" alt="kbalogo">
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="addcourse.html">Add Course</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="body">
+        <div class="addcourse">
+            <form action="courses.html">
+                <h1>Update Course</h1>
+
+                <Label for="name">Course Name : </Label>
+                <input type="text" id="name" placeholder="Enter course name "required>
+                
+                <label for="type">Course Type : </label>
+                <select name="course" id="type" required>
+                    <option value="c1">Self-paced</option>
+                    <option value="c2">Aidded</option>
+                    <option value="c3">Govt</option>
+                </select>
+                
+                <label for="desc">Description : </label>
+                <textarea id="desc" rows="5" cols="30" placeholder="Enter a brief description"></textarea>
+                
+                
+                <label for="price">Price :</label> 
+                <select name="price" id="price" required>
+                        <option value="p1">5000</option>
+                        <option value="p2">7000</option>
+                        <option value="p3">8000</option>
+                        <option value="p4">10000</option>
+                </select>
+                
+                <div class="log">
+                    <input class="submit" type="submit" value="Update Course">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

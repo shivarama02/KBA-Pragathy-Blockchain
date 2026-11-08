@@ -4,59 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Books</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table bgcolor="B3DAFD" width="100%" cellpadding="10">
-        <tr>
-            <td>
-                <img src="./images/booklogo.png" alt="booklogo" height="30" width="30">
-            </td>
-            <td align="right">
-                <a href="home.html">Home |</a>
-                <a href="Viewbooks.html">Books |</a>
-                <a href="Addbooks.html">Add Book |</a>
-                <a href="Login.html">Logout |</a>
-            </td>
-        </tr>
-    </table>
-    <br><br><br><br>
-    <center>
-        <form action="Viewbooks.html">
-            <table bgcolor="B3DAFD" cellspacing="30">
-                <tr>
-                    <td colspan="2" align="center">
-                        <h1>Edit Book</h1>
-                    </td>
-                </tr>
-            <tr>
-                <td>
+    <nav>
+        <div>
+            <img src="./images/booklogo.png" alt="kbalogo">
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Viewbooks.html">Books</a></li>
+            <li><a href="Addbooks.html">Add Book</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="main1">
+            <form action="Viewbooks.html">
+                <div>
+                    <h1>Edit Book</h1>
+                    
                     <label for="">Title</label>
-                </td>
-                <td>
-                    <input type="text" placeholder="Enter title here" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                    <input class="intp" type="text" placeholder="Enter title here" required>
+
                     <label for="">Author</label>
-                </td>
-                <td>
-                    <input type="text" placeholder="Enter author name" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                    <input class="intp" type="text" placeholder="Enter author name" required>
+
                     <label for="">ISBN</label>
-                </td>
-                <td>
-                    <input type="text" placeholder="Enter ISBN Number" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                    <input class="intp" type="text" placeholder="Enter ISBN Number" required>
+
                     <label for="">Category</label>
-                </td>
-                <td>
                     <select name="category" required>
                         <option value="c1">Fiction</option>
                         <option value="c2">Non-Fiction</option>
@@ -66,15 +43,14 @@
                         <option value="c6">Travel</option>
                         <option value="cccccc7">Cultural</option>
                     </select>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
-                    <input type="submit" value="Update Book">
-                </td>
-            </tr>
-        </table>
-    </form>
-    </center>
+
+                    <div class="bttn">
+                        <input class="btn1" type="submit" value="Update Book">
+                        <input class="btn2" type="reset" value="Cancel">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
