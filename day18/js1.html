@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for (let i = 1; i<=10; i++){
+            document.write("Java Script<br>")
+        }
+    </script>
+    <p>First 10 natural numbers</p>
+    <script>
+        let n1 = 10
+        for (let i=1; i<=n1; i++){
+            document.write(i+", ")
+        }
+        </script>
+    <p>First 10 even numbers</p>
+    <script>
+        let n2 = 20
+        for (let i=0; i<=n2; i+=2){
+            document.write(i+", ")
+        }
+    </script>
+    <p>multiple of 10</p>
+    <script>
+        let n3 = 10
+        for (let i=1 ; i<=n3; i++){
+            document.write((i*n3)+", ")
+        }
+    </script>
+    <p>Multiply by 2 and add 1</p>
+    <script>
+        let n4 = 2
+        for (let i=1; i<=10; i++){
+            document.write(n4 + ", ")
+            n4 = n4*2+1
+        }
+    </script>
+    <p>Fibonacci series</p>
+    <script>
+        let a = 0
+        let b = 1
+        let c = 0
+        for (let i=1; i<=10; i++){
+            document.write(a+ ", ")
+
+            c = a+b
+            a = b
+            b = c
+        }
+    </script>
+    <p>Factorial</p>
+    <script>
+        let n5 = 5
+        let factorial = 1
+        for (let i=n5; i>=1; i--){
+            factorial *= i
+        }
+        document.write("factorial of "+n5+": ",factorial)
+    </script>
+    <p>Reverse of a number</p>
+    <script>
+        let n6 = 12345
+        let n66 = n6
+        let reverse = 0
+        while(n6 > 0){
+            let rem = n6 % 10
+            reverse = (reverse * 10) + rem
+            n6 = Math.floor(n6 / 10)
+        }
+        document.write("reverse of number "+n66+" is "+reverse)
+    </script>
+    <p>Armstrong</p>
+    <script>
+        let n7 = 153
+        let temp = n7
+        let sum = 0
+        while(n7 > 0){
+            let rem = n7 % 10
+            sum = sum + (rem*rem*rem)
+            n7 = Math.floor(n7 / 10)
+        }
+        if(sum == temp){
+            document.write(temp+" is an armstrong number")
+        }
+        else{
+            document.write(temp+" is not an armstrong number")
+        }
+    </script>
+</body>
+</html>

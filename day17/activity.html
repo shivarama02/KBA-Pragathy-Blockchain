@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>100 Activity</h1>
+
+    <h3>Q1:</h3>
+    <script>
+        let name = "Shivarama";
+        let age = 22;
+        let place = "Kerala";
+
+        document.write("Name: " + name + "<br>");
+        document.write("Age: " + age + "<br>");
+        document.write("Place: " + place);
+    </script>
+
+    <h3>Q2:</h3>
+    <script>
+        for (let i = 1; i <= 10; i++) {
+            document.write("5 x " + i + " = " + (5 * i) + "<br>");
+        }
+    </script>
+
+    <h3>Q3:</h3>
+    <script>
+        document.write("Name: Shivarama<br>");
+        document.write("Course: Software Engineering<br>");
+        document.write("College: ABC College<br>");
+        document.write("Year of Study: 2026<br>");
+    </script>
+
+    <h3>Q4:</h3>
+    <script>
+        let a = 10;
+        let b = 20;
+
+        console.log("Sum: " + (a + b));
+        document.write("Sum: " + (a + b));
+        
+    </script>
+
+    <h3>Q5:</h3>
+    <script>
+        let studentName = "Shivarama";
+        let studentAge = 22;
+        let city = "Kerala";
+
+        console.log("Name: " + studentName);
+        console.log("Age: " + studentAge);
+        console.log("City: " + city);
+
+        document.write("Name: " + studentName);
+        document.write("<br>Age: " + studentAge);
+        document.write("<br>City: " + city);
+    </script>
+
+    <h3>Q6:</h3>
+    <h1 id="heading">Welcome</h1>
+    <script>
+        document.getElementById("heading").innerHTML = "Welcome to JavaScript";
+    </script>
+
+    <h3>Q7:</h3>
+    <p id="result"></p>
+    <script>
+        let sum = 25 + 35;
+
+        document.getElementById("result").innerHTML = sum;
+    </script>
+
+    <h3>Q8:</h3>
+    <p id="first"></p>
+    <p id="second"></p>
+    <script>
+        document.getElementById("first").innerHTML = "Welcome to JavaScript";
+        document.getElementById("second").innerHTML = "JavaScript is easy to learn";
+    </script>
+
+    <h3>Q9:</h3>
+    <h2 id="title">Hello World</h2>
+    <button onclick="changeText()">Click Me</button>
+    <script>
+        function changeText() {
+            document.getElementById("title").innerHTML = "JavaScript is Interesting!";
+        }
+    </script>
+
+    <h3>Q10:</h3>
+    <p id="language"></p>
+    <script>
+        document.getElementById("language").innerHTML = "My favourite programming language is Python";
+    </script>
+
+    <h3>Q11:</h3>
+    <script>
+        let num1 = 20;
+        let num2 = 30;
+
+        console.log("Sum: " + (num1 + num2));
+        console.log("Difference: " + (num1 - num2));
+        console.log("Product: " + (num1 * num2));
+        console.log("Quotient: " + (num1 / num2));
+
+        document.write("Sum: " + (num1 + num2));
+        document.write("<br>Difference: " + (num1 - num2));
+        document.write("<br>Product: " + (num1 * num2));
+        document.write("<br>Quotient: " + (num1 / num2));
+    </script>
+
+    <h3>Q12:</h3>
+    <div id="intro"></div>
+    <script>
+        document.getElementById("intro").innerHTML = "<h2>Shivarama</h2><p>I am learning Blockchain and mernstack.</p>";
+    </script>
+
+    <h3>Q13:</h3>
+    <p id="square"></p>
+    <script>
+        let number = 5;
+
+        document.getElementById("square").innerHTML = "Square: " + (number * number);
+    </script>
+
+    <h3>Q14:</h3>
+    <h2 id="firstHeading"></h2>
+    <h2 id="secondHeading"></h2>
+    <h2 id="thirdHeading"></h2>
+    <script>
+        document.getElementById("firstHeading").innerHTML = "Welcome to JavaScript";
+        document.getElementById("secondHeading").innerHTML = "Learn Programming";
+        document.getElementById("thirdHeading").innerHTML = "Happy Coding";
+    </script>
+
+    <h3>Q15:</h3>
+    <p id="total"></p>
+    <script>
+        let x = 10;
+        let y = 20;
+        let z = 30;
+
+        console.log("X: " + x);
+        console.log("Y: " + y);
+        console.log("Z: " + z);
+
+        document.getElementById("total").innerHTML = "Sum: " + (x + y + z);
+    </script>
+
+    <h3>Q16:</h3>
+    <script>
+        let p = document.createElement("p");
+        p.innerHTML = "Welcome to DOM Manipulation";
+        document.body.appendChild(p);
+    </script>
+
+    <h3>Q17:</h3>
+    <script>
+        let h1 = document.createElement("h1");
+        h1.innerHTML = "My First JavaScript Heading";
+        document.body.appendChild(h1);
+    </script>
+
+    <h3>Q18:</h3>
+    <script>
+        let ul = document.createElement("ul");
+
+        let li1 = document.createElement("li");
+        li1.innerHTML = "HTML";
+        ul.appendChild(li1);
+
+        let li2 = document.createElement("li");
+        li2.innerHTML = "CSS";
+        ul.appendChild(li2);
+
+        let li3 = document.createElement("li");
+        li3.innerHTML = "JavaScript";
+        ul.appendChild(li3);
+
+        document.body.appendChild(ul);
+
+    </script>
+
+    <h3>Q19:</h3>
+    <script>
+        let btn = document.createElement("button");
+        btn.innerHTML = "Click Me";
+        document.body.appendChild(btn);
+    </script>
+
+    <h3>Q20:</h3>
+    <script>
+        let p2 = document.createElement("p");
+        let table = "";
+
+        for (let i = 1; i <= 10; i++) {
+            table += "7 x " + i + " = " + (7 * i) + "<br>";
+        }
+
+        p2.innerHTML = table;
+        document.body.appendChild(p2);
+    </script>
+
+    <h3>Q21:</h3>
+    <script>
+        let div = document.createElement("div");
+
+        let heading1 = document.createElement("h2");
+        heading1.innerHTML = "Welcome";
+        div.appendChild(heading1);
+
+        let heading2 = document.createElement("h2");
+        heading2.innerHTML = "JavaScript DOM";
+        div.appendChild(heading2);
+
+        let para = document.createElement("p");
+        para.innerHTML = "This is a paragraph inside a dynamically created div.";
+        div.appendChild(para);
+
+        document.body.appendChild(div);
+
+    </script>
+    <h3>Q19:</h3>
+<script>
+    let students = ["Arun", "Rahul", "Akhil", "Vishnu", "Amal"];
+
+    for (let i = 0; i < students.length; i++) {
+        let p = document.createElement("p");
+        p.innerHTML = students[i];
+        document.body.appendChild(p);
+    }
+</script>
+
+<h3>Q20:</h3>
+<button onclick="createPara()">Create Paragraph</button>
+
+<script>
+    function createPara() {
+        let p = document.createElement("p");
+        p.innerHTML = "New Paragraph Created";
+        document.body.appendChild(p);
+    }
+</script>
+
+<h3>Q21:</h3>
+<script>
+    let table1 = document.createElement("table");
+    table1.border = "1";
+
+    let students1 = [
+        ["Student Name", "Marks"],
+        ["Arun", 85],
+        ["Rahul", 90]
+    ];
+
+    for (let i = 0; i < students1.length; i++) {
+        let tr = document.createElement("tr");
+
+        for (let j = 0; j < students1[i].length; j++) {
+            let td = document.createElement("td");
+            td.innerHTML = students1[i][j];
+            tr.appendChild(td);
+        }
+
+        table1.appendChild(tr);
+    }
+
+    document.body.appendChild(table1);
+    </script>
+
+    <h3>Q22:</h3>
+    <ul id="myList">
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+
+    <button onclick="addItem()">Add Item</button>
+
+    <script>
+        function addItem() {
+            let li = document.createElement("li");
+            li.innerHTML = "JavaScript";
+            document.getElementById("myList").appendChild(li);
+        }
+    </script>
+
+    <h3>Q23:</h3>
+    <script>
+        let num11 = 20;
+        let num22 = 10;
+
+        document.write(num11 > num22);
+    </script>
+
+    <h3>Q24:</h3>
+    <script>
+        let num = 100;
+
+        if (num == 100) {
+            document.write("Number is equal to 100");
+        } else {
+            document.write("Number is not equal to 100");
+        }
+    </script>
+
+    <h3>Q25:</h3>
+    <script>
+        let a1 = 10;
+        let b1 = 20;
+
+        document.write(a1 != b1);
+    </script>
+
+    <h3>Q26:</h3>
+    <script>
+        let a2 = 10;
+        let b2 = "10";
+
+        document.write("Using == : " + (a2 == b2) + "<br>");
+        document.write("Using === : " + (a2 === b2));
+    </script>
+
+    <h3>Q27:</h3>
+    <script>
+        let age1 = 20;
+
+        if (age1 >= 18) {
+            document.write("Person is eligible");
+        } else {
+            document.write("Person is not eligible");
+        }
+    </script>
+
+    <h3>Q28:</h3>
+    <script>
+        let mark1 = 35;
+
+        if (mark1 < 40) {
+            document.write("Failed");
+        } else {
+            document.write("Passed");
+        }
+    </script>
+
+    <h3>Q29:</h3>
+    <script>
+        let number1 = 75;
+
+        if (number1 >= 50 && number1 <= 100) {
+            document.write("Number is between 50 and 100");
+        } else {
+            document.write("Number is not between 50 and 100");
+        }
+    </script>
+
+    <h3>Q30:</h3>
+    <script>
+        let num13 = 10;
+        let num23 = 10;
+
+        if (num13 === num23) {
+            document.write("Both numbers are equal");
+        } else {
+            document.write("Both numbers are not equal");
+        }
+    </script>
+
+    <h3>Q31:</h3>
+    <script>
+        let temperature = 38;
+
+        if (temperature > 35) {
+            document.write("Temperature is greater than 35");
+        } else {
+            document.write("Temperature is not greater than 35");
+        }
+    </script>
+
+    <h3>Q32:</h3>
+    <script>
+        let x1 = 20;
+        let y1 = "20";
+
+        document.write(x1 !== y1);
+    </script>
+
+    <h3>Q33:</h3>
+    <script>
+        let mark = 95;
+
+        if (mark > 90) {
+            document.write("Student scored more than 90 marks");
+        } else {
+            document.write("Student did not score more than 90 marks");
+        }
+    </script>
+
+    <h3>Q34:</h3>
+    <script>
+        let n1 = 50;
+        let n2 = 30;
+        let n3 = 40;
+
+        if (n1 > n2 && n1 > n3) {
+            document.write("First number is greater than both numbers");
+        } else {
+            document.write("First number is not greater than both numbers");
+        }
+    </script>
+
+<h3>Q35:</h3>
+<script>
+    let year = 2026;
+
+    if (year == 2026) {
+        document.write("Year is 2026");
+    } else {
+        document.write("Year is not 2026");
+    }
+</script>
+
+<h3>Q36:</h3>
+<script>
+    let salary = 25000;
+
+    if (salary >= 20000 && salary < 50000) {
+        document.write("Salary is between 20000 and 50000");
+    } else {
+        document.write("Salary is outside the given range");
+    }
+</script>
+
+<h3>Q37:</h3>
+<script>
+    let a11 = 10;
+    let b11 = "10";
+    let c11 = 10;
+
+    console.log(a11 == b11);
+    console.log(a11 === b11);
+    console.log(a11 != b11);
+    console.log(a11 !== b11);
+    console.log(a11 === c11);
+</script>
+</body>
+</html>
