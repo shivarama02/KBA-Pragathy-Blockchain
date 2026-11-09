@@ -1,29 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front Page</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <div class="nav">
-        <div class="logo">
-            <img src="./images/certificate-3d-icon-png-download.png" alt="">
-            <h4>Certificate App</h4>
+
+<body class="m-[8px] bg-[antiquewhite]">
+
+    <div class="flex justify-between rounded-bl-[10px] rounded-br-[10px] p-[10px]">
+        <div class="flex items-center">
+            <img src="./images/certificate-3d-icon-png-download.png" alt="" class="h-[50px] w-[50px] hover:drop-shadow-[0_5px_5px_black]">
+            <h4 class="m-0 ml-[10px] text-[1em] font-bold font-[Verdana,Geneva,Tahoma,sans-serif]">Certificate App</h4>
         </div>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="issuecertificate.html">Issue Certificate</a></li>
-            <li><a href="viewcertificate.html">View Certificate</a></li>
+        <ul class="my-[1em] flex list-none pl-[40px]">
+            <li>
+                <a href="home.html" class="p-[10px] text-black no-underline hover:rounded-[10px] hover:bg-[#00aaff] hover:text-white hover:shadow-[0_2px_2px_black]">Home</a>
+            </li>
+            <li>
+                <a href="issuecertificate.html" class="p-[10px] text-black no-underline hover:rounded-[10px] hover:bg-[#00aaff] hover:text-white hover:shadow-[0_2px_2px_black]">Issue Certificate</a>
+            </li>
+            <li>
+                <a href="viewcertificate.html" class="p-[10px] text-black no-underline hover:rounded-[10px] hover:bg-[#00aaff] hover:text-white hover:shadow-[0_2px_2px_black]">View Certificate</a>
+            </li>
         </ul>
     </div>
-    <div class="main">
-        <h1>Certificate App</h1>
-        <img src="./images/online-course.png" alt="">
-        <div class="inpt">
-            <input type="search" id="Search" placeholder="Enter Certificate ID to view">
-            <button>Search</button>
+    <div class="text-center">
+        <h1 class="my-[0.67em] text-[2em] font-bold font-[Verdana,Geneva,Tahoma,sans-serif]">Certificate App</h1>
+        <img src="./images/online-course.png" alt="" class=" m-auto h-[300px] w-[300px] p-[50px] grayscale-[30%] hover:grayscale-0">
+        <div class="flex justify-center">
+            <input type="search" id="Search"
+                placeholder="Enter Certificate ID to view"
+                class="box-border w-[250px] rounded-tl-[10px] rounded-bl-[10px] border border-[#00aaff] bg-white p-[10px]">
+            <button class="ml-[10px] w-[100px] rounded-tr-[10px] rounded-br-[10px] border border-[#00aaff] bg-white p-[10px] hover:bg-[#00aaff] hover:text-white">Search</button>
         </div>
     </div>
 </body>

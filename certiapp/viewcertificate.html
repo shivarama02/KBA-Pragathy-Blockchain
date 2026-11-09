@@ -1,35 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Certificate</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <div class="nav">
-        <div class="logo">
-            <img src="./images/certificate-3d-icon-png-download.png" alt="">
-            <h4>Certificate App</h4>
+
+<body class="m-[8px] bg-[antiquewhite]">
+    <div class="flex justify-between rounded-bl-[10px] rounded-br-[10px] p-[10px]">
+        <div class="flex items-center">
+            <img src="./images/certificate-3d-icon-png-download.png" alt="" class="h-[50px] w-[50px] hover:drop-shadow-[0_5px_5px_black]">
+            <h4 class="m-0 ml-[10px] text-[1em] font-bold font-[Verdana,Geneva,Tahoma,sans-serif]">Certificate App</h4>
         </div>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="issuecertificate.html">Issue Certificate</a></li>
-            <li><a href="viewcertificate.html">View Certificate</a></li>
+
+        <ul class="my-[1em] flex list-none pl-[40px]">
+            <li>
+                <a href="home.html" class="p-[10px] text-black no-underline hover:rounded-[10px] hover:bg-[#00aaff] hover:text-white hover:shadow-[0_2px_2px_black]">Home</a>
+            </li>
+            <li>
+                <a href="issuecertificate.html" class="p-[10px] text-black no-underline hover:rounded-[10px] hover:bg-[#00aaff] hover:text-white hover:shadow-[0_2px_2px_black]">Issue Certificate</a>
+            </li>
+            <li>
+                <a href="viewcertificate.html" class="p-[10px] text-black no-underline hover:rounded-[10px] hover:bg-[#00aaff] hover:text-white hover:shadow-[0_2px_2px_black]">View Certificate</a>
+            </li>
         </ul>
     </div>
-        <div class="certi">
-            <div class="cont">
-                <h1>Kerala Blockchain Academy</h1>
-                <img src="./images/online-course.png" alt="thumbnail" height="200" width="200">
-                <p>This is certify that <span>Student1</span><br> has successfully completed <span>Blockchain Foundation</span> with <span>S Grade</span> on <span>2024-08-07</span></p>
-                
-                    <img src="./images/pngtree-circular-sawtooth-englis.png" alt="seal" class="img1">
-                
-                
-                    <img src="./images/pngtree-signature-isolated-the-s.png" alt="signature" class="img2">
-                
-            </div>
+    <div class="flex items-center justify-center">
+        <div class="relative box-content w-1/2 rounded-[5px] bg-white px-[30px] pt-[30px] pb-[130px] text-center">
+            <h1 class="p-[20px] font-[Arial,Helvetica,sans-serif] text-[2em] font-bold">
+                Kerala Blockchain Academy
+            </h1>
+            <img src="./images/online-course.png" alt="thumbnail" class="inline-block h-[200px] w-[200px]" height="200" width="200">
+
+            <p class="p-[30px]">This is certify that<span class="font-bold">Student1</span><br>has successfully completed<span class="font-bold">Blockchain Foundation</span>with<span class="font-bold">S Grade</span>on<span class="font-bold">2024-08-07</span></p>
+
+            <img src="./images/pngtree-circular-sawtooth-englis.png" alt="seal" class="absolute bottom-[20px] left-[30px] mx-[100px] h-[100px] w-[100px]">
+            <img src="./images/pngtree-signature-isolated-the-s.png" alt="signature" class="absolute right-[30px] bottom-[20px] mx-[100px] h-[100px] w-[100px]">
         </div>
+    </div>
 </body>
 </html>

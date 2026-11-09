@@ -1,42 +1,59 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Issue Certificate</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <div class="nav">
-        <div class="logo">
-            <img src="./images/certificate-3d-icon-png-download.png" alt="">
-            <h4>Certificate App</h4>
+<body class="m-[8px] bg-[antiquewhite]">
+
+    <!-- Navigation Bar -->
+    <div class="flex justify-between rounded-bl-[10px] rounded-br-[10px] p-[10px]">
+        <div class="flex items-center">
+            <img src="./images/certificate-3d-icon-png-download.png" alt=""
+                class="h-[50px] w-[50px] hover:drop-shadow-[0_5px_5px_black]">
+
+            <h4 class="m-0 ml-[10px] text-[1em] font-bold font-[Verdana,Geneva,Tahoma,sans-serif]">
+                Certificate App
+            </h4>
         </div>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="issuecertificate.html">Issue Certificate</a></li>
-            <li><a href="viewcertificate.html">View Certificate</a></li>
+
+        <ul class="my-[1em] flex list-none pl-[40px]">
+            <li>
+                <a href="home.html" class="p-[10px] text-black no-underline hover:rounded-[10px] hover:bg-[#00aaff] hover:text-white hover:shadow-[0_2px_2px_black]">Home</a>
+            </li>
+            <li>
+                <a href="issuecertificate.html" class="p-[10px] text-black no-underline hover:rounded-[10px] hover:bg-[#00aaff] hover:text-white hover:shadow-[0_2px_2px_black]">Issue Certificate</a>
+            </li>
+            <li>
+                <a href="viewcertificate.html" class="p-[10px] text-black no-underline hover:rounded-[10px] hover:bg-[#00aaff] hover:text-white hover:shadow-[0_2px_2px_black]">View Certificate</a>
+            </li>
         </ul>
     </div>
-    <div class="body">
-        <div class="card">
+
+    <div class="flex items-center justify-center">
+        <div class="mt-[30px] w-[500px] rounded-[10px] bg-white p-[20px] shadow-[0_5px_10px_rgb(111,108,108)]">
             <form action="viewcertificate.html">
-                <h1>Issue New Certificate</h1>
-                <label for="course">Select Course* : </label>
-                <select name="course" id="course">
+                <h1 class="my-[0.67em] text-center font-[Verdana,Geneva,Tahoma,sans-serif] text-[2em] font-bold text-black">Issue New Certificate</h1>
+
+                <label for="course" class="my-[10px] block font-[Arial,Helvetica,sans-serif]">Select Course* :</label>
+                <select name="course" id="course"
+                    class="box-border w-full rounded-[5px] border border-black p-[10px] hover:border-[#00aaff]">
                     <option value="c1">Certified Blockchain Associate</option>
                     <option value="c2">Certified Artificial Intelligence Associate</option>
                     <option value="c3">Certified Mechine Learning Associate</option>
                 </select>
-                
-                <label for="idd">Certificate ID* : </label>
-                <input type="text" id="idd" placeholder="Certificate ID" required>
-                
-                <label for="name">Candidate Name* : </label>
-                <input type="text" id="name" placeholder="Name" required>
-                
-                <label for="grade">Select Grade* : </label>
-                <select name="grade" id="grade">
+
+                <label for="idd" class="my-[10px] block font-[Arial,Helvetica,sans-serif]">Certificate ID* :</label>
+                <input type="text" id="idd" placeholder="Certificate ID" required class="box-border w-full rounded-[5px] border border-black p-[10px] hover:border-[#00aaff]">
+
+                <label for="name" class="my-[10px] block font-[Arial,Helvetica,sans-serif]">Candidate Name* :</label>
+                <input type="text" id="name" placeholder="Name" required class="box-border w-full rounded-[5px] border border-black p-[10px] hover:border-[#00aaff]">
+
+                <label for="grade" class="my-[10px] block font-[Arial,Helvetica,sans-serif]">Select Grade* :</label>
+                <select name="grade" id="grade" class="box-border w-full rounded-[5px] border border-black p-[10px] hover:border-[#00aaff]">
                     <option value="g1">S</option>
                     <option value="g2">A+</option>
                     <option value="g3">A</option>
@@ -46,14 +63,17 @@
                     <option value="g7">P</option>
                     <option value="g8">F</option>
                 </select>
-                
-                <label for="date">Issue Date* : </label>
-                <input type="date" id="date" required>
-                <div class="log">
-                    <input type="submit" value="Issue Certificate">
+
+                <label for="date" class="my-[10px] block font-[Arial,Helvetica,sans-serif]">Issue Date* :</label>
+                <input type="date" id="date" required class="box-border w-full rounded-[5px] border border-black p-[10px] hover:border-[#00aaff]">
+
+                <div class="my-[20px] flex justify-start">
+                    <input type="submit" value="Issue Certificate" class="rounded-[10px] bg-white px-[30px] py-[10px] text-[15px] text-black border-1 hover:bg-[#00aaff] hover:text-white">
                 </div>
+
             </form>
         </div>
     </div>
+
 </body>
 </html>
