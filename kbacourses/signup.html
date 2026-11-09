@@ -1,92 +1,43 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <style>
-        .bgbody{
-            background-color: #F0BDE0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        } 
-        .login{
-            background-color: #ffffff;
-            padding: 20px;
-            margin-top: 150px;
-            width: 300px;
-            border-radius: 10px;
-            box-shadow: 0 5px 10px rgb(111, 108, 108);
-        }
-        .login h1{
-            text-align: center;
-            color: #9333EA;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        .login label{
-            display: block;
-            margin: 10px 0px;        
-        }
-        .intp, select{
-            padding: 10px;
-            border: 1px solid;
-            border-radius: 5px;
-            box-sizing: border-box;
-            width: 100%;
-        }
-        
-        .log{
-            display: flex;
-            justify-content:start;
-            margin: 20px 0px;
-        }
-        .submit{
-            background-color: #9333EA;
-            padding: 10px 30px;
-            color: white;
-            font-size: 15px;
-            border-radius: 10px;
-        }
-        .btxt a{
-            text-decoration: none;
-            padding: 10px 0px;
-            color: #9333EA;
-        }
-        .btxt{
-            text-align: center;
-        }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bgbody">
-    <div class="login">
+
+<body class="flex items-center justify-center bg-[#F0BDE0]">
+    <div class="mt-[150px] w-[400px] rounded-[10px] bg-white p-[20px] shadow-[0_5px_10px_rgb(111,108,108)]">
         <form action="home.html">
-        <div>
-            <h1>Sign Up</h1>
+            <div>
+                <h1 class="text-center font-[Verdana,Geneva,Tahoma,sans-serif] text-[#9333EA] text-3xl font-bold">Sign Up</h1>
 
-            <label for="name">Full Name :</label>
-            <input class="intp" type="text" id="name" placeholder="Enter your name" required>
+                <label for="name" class="my-[10px] block">Full Name :</label>
+                <input class="box-border w-full rounded-[5px] border border-black p-[10px]" type="text" id="name" placeholder="Enter your name" required>
 
-            <label for="email">Email :</label>
-            <input class="intp" type="email" id="email" placeholder="Enter your email" required>
+                <label for="email" class="my-[10px] block">Email :</label>
+                <input class="box-border w-full rounded-[5px] border border-black p-[10px]" type="email" id="email" placeholder="Enter your email" required>
 
-            <label for="password">Password : </label>
-            <input class="intp" type="password" id="password" placeholder="Enter your passowrd" required>
-            
-            <label for="role">Role : </label>
-            <select name="role" id="role" required>
-                <option value="r1">Admin</option>
-                <option value="r2">User</option>
-            </select>
+                <label for="password" class="my-[10px] block">Password :</label>
+                <input class="box-border w-full rounded-[5px] border border-black p-[10px]" type="password" id="password" placeholder="Enter your password" required>
 
-            <div class="log">
-                <input class="submit" type="submit" value="Sign Up">
+                <label for="role" class="my-[10px] block">Role :</label>
+                <select name="role" id="role" class="box-border w-full rounded-[5px] border border-black p-[10px]" required>
+                    <option value="r1">Admin</option>
+                    <option value="r2">User</option>
+                </select>
+
+                <div class="my-[20px] flex justify-start">
+                    <input class="rounded-[10px] bg-[#9333EA] px-[30px] py-[10px] text-[15px] text-white" type="submit" value="Sign Up">
+                </div>
+
+                <div class="text-center">
+                    Already have an Account?
+                    <a href="login.html" class="py-[10px] text-[#9333EA] no-underline">Login</a>
+                </div>
             </div>
-            
-            <div class="btxt">
-                Already have an Account? <a href="login.html">Login</a>
-            </div>
-        </div>
         </form>
     </div>
 </body>

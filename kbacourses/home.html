@@ -8,45 +8,47 @@
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <nav class=" bg-">
+    <nav class="flex justify-between rounded-[5px] border border-black bg-[#F0BDE0] p-[10px]">
         <div>
-            <img src="./images/kbalogo.png" alt="kbalogo" class="h-20 w-20">
+            <img src="./images/kbalogo.png" alt="kbalogo" class="h-[50px] w-[50px] hover:rounded-[10px] hover:shadow-[0_0_5px_black]">
         </div>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="addcourse.html">Add Course</a></li>
-            <li><a href="login.html">Logout</a></li>
+        <ul class="flex list-none items-center my-4">
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="home.html">Home</a></li>
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="courses.html">Courses</a></li>
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="contactus.html">Contact Us</a></li>
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="addcourse.html">Add Course</a></li>
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="login.html">Logout</a></li>
         </ul>
     </nav>
 
-    <div class="heading">
-        <h1>Learn Blockchain Technology<br> From <br>Kerala's First Dedicated Facility for Blockchain Education</h1>
-        <h5>Since 2017</h5>
+    <div class="mx-auto mt-[20px] bg-[#F0BDE0] p-[10px] text-center">
+        <h1 class="text-3xl font-bold">Learn Blockchain Technology<br> From <br>Kerala's First Dedicated Facility for Blockchain Education</h1>
+        <h5 class="text-base font-bold">Since 2017</h5>
     </div>
 
-    <div class="heading">
-        <h1>BROWSE OUR TOP COURSES</h1>
-        <h5>Choose the course that's right for your career goals</h5>
+    <div class="mx-auto mt-[20px] bg-[#F0BDE0] p-[10px] text-center">
+        <h1 class="text-3xl font-bold">BROWSE OUR TOP COURSES</h1>
+        <h5 class="text-base font-bold">Choose the course that's right for your career goals</h5>
     </div>
 
-    <div class="all">
-        <h1>All Courses</h1>
-    </div class="all">
+    <div class="text-center text-black">
+        <h1 class="text-3xl font-bold">All Courses</h1>
+    </div>
 
-        <div class="card">
+        <div class="mb-[100px] ml-[50px] w-[400px] rounded-[5px] bg-[#F0BDE0] text-center shadow-[0_5px_10px_black]">
             <div class="top">
-                <h2>s122</h2>
-                <img src="./images/desktop-software-development-2.png" alt="Thumbnail">
-                <h3>11q...</h3>
+                <h2 class="text-2xl font-bold m-[5px] p-[20px] font-[Verdana,Geneva,Tahoma,sans-serif] text-[#9333EA]">s122</h2>
+                <img src="./images/desktop-software-development-2.png" alt="Thumbnail" class="m-auto ox-border h-[200px] w-[200px] p-[10px]">
+                <h3 class="text-xl font-bold m-[5px] p-[5px] font-[Verdana,Geneva,Tahoma,sans-serif] text-[#9333EA]">11q...</h3>
             </div>
         
-            <div class="bottom">
+            <div class="px-5 py-4 text-justify">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur hic perferendis natus, beatae id nemo dolore dolor placeat, non commodi molestiae? Eaque corrupti explicabo quod perferendis qui accusamus dolorem odio!</p>
             </div>
 
-                <button><a href="learnmore.html">Learn More</a></button>
+                <button class="my-[20px] cursor-pointer rounded-[10px] bg-[#9333EA] px-[30px] py-[10px] text-[15px] text-white">
+                    <a href="learnmore.html" class="mb-[10px] text-white no-underline">Learn More</a>
+                </button>
         </div>
     </body>
 </html>

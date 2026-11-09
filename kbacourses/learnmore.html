@@ -4,56 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn More</title>
-    <link rel="stylesheet" href="./stylecss/style.css">
+    <!-- <link rel="stylesheet" href="./stylecss/style.css"> -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <nav>
+    <nav class="flex justify-between rounded-[5px] border border-black bg-[#F0BDE0] p-[10px]">
         <div>
-            <img src="./images/kbalogo.png" alt="kbalogo">
+            <img src="./images/kbalogo.png" alt="kbalogo" class="h-[50px] w-[50px] hover:rounded-[10px] hover:shadow-[0_0_5px_black]">
         </div>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="addcourse.html">Add Course</a></li>
-            <li><a href="login.html">Logout</a></li>
+        <ul class="flex list-none items-center my-4">
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="home.html">Home</a></li>
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="courses.html">Courses</a></li>
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="contactus.html">Contact Us</a></li>
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="addcourse.html">Add Course</a></li>
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="login.html">Logout</a></li>
         </ul>
     </nav>
     
-    <div class="learncourse">
-        <div class="back2">
+    <div class="mx-auto w-1/2 p-[20px]">
+        <div class="p-[10px]">
             <a href="courses.html">Back to Courses</a>
         </div>
-        <div class="card1">
+        <div class="rounded-[10px] bg-[#F0BDE0] p-[20px]">
             <div class="image">
-                <img src="./images/desktop-software-development-2.png" alt="">
+                <img src="./images/desktop-software-development-2.png" alt="desktop" class=" m-auto h-[200px] w-[200px] box-border">
             </div>
-            <div class="cart">
-                <h2>s122</h2>   
-                <div class="cart15">
-                    <p>Rs. 15000</p>
-                    <button><a href="">Add to Cart</a></button>
+            <div class="mt-[45x] flex h-[35px] w-full justify-between p-[10px] text-center">
+                <h2 class="text-2xl font-bold text-[#9333EA]">s122</h2>   
+                <div class="flex justify-center">
+                    <p class="font-[Verdana,Geneva,Tahoma,sans-serif] text-red-600">Rs. 15000</p>
+                    <button>
+                        <a href="#" class="mx-[10px] inline-flex items-center justify-center rounded-[10px] border border-gray-500 bg-[#F3F4F6] px-[12px] py-[10px] text-black no-underline">Add to Cart</a>
+                    </button>
                 </div>
             </div>
-            <h2>Description</h2>
+            <h2 class="text-2xl font-bold text-[#9333EA]">Description</h2>
             <p>11q</p>
-            <h2>Prerequisites</h2>
-            <ul>
+            <h2 class="text-2xl font-bold text-[#9333EA]">Prerequisites</h2>
+            <ul class="list-disc pl-[45px]">
                 <li>Basic understanding of blockchain technology</li>
                 <li>Familiarity with programming languages </li>
                 <li>Internet Access</li>
             </ul>
-            <h2>Features</h2>
-            <ul>
+            <h2 class="text-2xl font-bold text-[#9333EA]">Features</h2>
+            <ul class="list-disc pl-[45px]">
                 <li>40 hours of content </li>
                 <li>Certificate of completion </li>
                 <li>Access to community forums </li>
                 <li>Downloadable resources </li>
                 <li>24/7 Support</li>
             </ul>
-            <div class="btn">
-                <button class="btn1"><a href="updatecourse.html">Edit Course</a></button>
-                <button class="btn2">Remove Course</button>
+            <div class="flex justify-center">
+                <button class="mx-[10px] rounded-[10px] bg-[rgb(54,54,180)] p-[10px] text-center text-white">
+                    <a href="updatecourse.html" class="text-white no-underline">Edit Course</a>
+                </button>
+                <button class="mx-[10px] rounded-[10px] bg-[rgb(180,54,54)] p-[10px] text-center text-white">Remove Course</button>
             </div>
         </div>
     </div>

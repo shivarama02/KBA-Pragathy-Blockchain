@@ -4,52 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
-    <link rel="stylesheet" href="./stylecss/style.css">
+    <!-- <link rel="stylesheet" href="./stylecss/style.css"> -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <nav>
+    <nav class="flex justify-between rounded-[5px] border border-black bg-[#F0BDE0] p-[10px]">
         <div>
-            <img src="./images/kbalogo.png" alt="kbalogo">
+            <img src="./images/kbalogo.png" alt="kbalogo" class="h-[50px] w-[50px] hover:rounded-[10px] hover:shadow-[0_0_5px_black]">
         </div>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="addcourse.html">Add Course</a></li>
-            <li><a href="login.html">Logout</a></li>
+        <ul class="flex list-none items-center my-4">
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="home.html">Home</a></li>
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="courses.html">Courses</a></li>
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="contactus.html">Contact Us</a></li>
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="addcourse.html">Add Course</a></li>
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="login.html">Logout</a></li>
         </ul>
     </nav>
-    <div class="contact">
-        <h4>Contact Us</h4>
-        <h1>Get in touch</h1>
+    <div class="m-[100px] text-center">
+        <h4 class="text-lg font-bold text-[#9333EA]">Contact Us</h4>
+        <h1 class="text-3xl font-bold">Get in touch</h1>
         <p>our friendly team is always here to chat</p>
     </div>
 
 
-    <div class="tag">
+    <div class="my-[50px] flex justify-around">
         <tr>
-            <div class="email">
-                <img src="./images/mail-227.png" alt="mailicon" height="30" width="30">
-                <h2>Email</h2>
+            <div class="text-center">
+                <img class="mx-auto p-[20px] hover:rounded-full hover:bg-gray-500 h-[70px] w-[70px]" src="./images/mail-227.png" alt="mailicon" >
+                <h2 class="text-2xl font-bold">Email</h2>
                 <p>Our friendlyteam is here to help</p>
-                <p class="low">hello@merakiui.com</p>
+                <p class="text-[#9333EA]">hello@merakiui.com</p>
             </div>
-            <div class="email">
-                <img src="./images/535239.png" alt="locationicon" height="30" width="30">
-                <h2>Office</h2>
+            <div class="text-center">
+                <img class="mx-auto p-[20px] hover:rounded-full hover:bg-gray-500 h-[70px] w-[70px]" src="./images/535239.png" alt="locationicon" >
+                <h2 class="text-2xl font-bold">Office</h2>
                 <p>Come say helloat our office HQ</p>
-                <p class="low">100 Smith Street Collingwood VIC 3066 AU</p>
+                <p class="text-[#9333EA]">100 Smith Street Collingwood VIC 3066 AU</p>
             </div>
-            <div class="email">
-                <img src="./images/5068731.png" alt="callicon" height="30" width="30">
-                <h2>Phone</h2>
+            <div class="text-center">
+                <img class="mx-auto p-[20px] hover:rounded-full hover:bg-gray-500 h-[70px] w-[70px]" src="./images/5068731.png" alt="callicon" >
+                <h2 class="text-2xl font-bold">Phone</h2>
                 <p>Mon-Fri from 8am to 5pm</p>
-                <p class="low">+1 (555)000-0000</p>
+                <p class="text-[#9333EA]">+1 (555)000-0000</p>
             </div>
         </tr>
     </div>
-
-    </center>
 
 
 </body>

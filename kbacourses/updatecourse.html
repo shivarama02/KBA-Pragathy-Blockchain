@@ -4,51 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update course</title>
-    <link rel="stylesheet" href="./stylecss/style.css">
+    <!-- <link rel="stylesheet" href="./stylecss/style.css"> -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <nav>
+    <nav class="flex justify-between rounded-[5px] border border-black bg-[#F0BDE0] p-[10px]">
         <div>
-            <img src="./images/kbalogo.png" alt="kbalogo">
+            <img src="./images/kbalogo.png" alt="kbalogo" class="h-[50px] w-[50px] hover:rounded-[10px] hover:shadow-[0_0_5px_black]">
         </div>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="addcourse.html">Add Course</a></li>
-            <li><a href="login.html">Logout</a></li>
+        <ul class="flex list-none items-center my-4">
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="home.html">Home</a></li>
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="courses.html">Courses</a></li>
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="contactus.html">Contact Us</a></li>
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="addcourse.html">Add Course</a></li>
+            <li><a class="p-[10px] text-black no-underline hover:rounded-[5px] hover:bg-[#9333EA] hover:text-white hover:shadow-[0_1px_5px_black]" href="login.html">Logout</a></li>
         </ul>
     </nav>
 
-    <div class="body">
-        <div class="addcourse">
+    <div class="flex items-center justify-center">
+        <div class="mt-[30px] w-[500px] rounded-[10px] bg-[#F0BDE0] p-[20px] shadow-[0_5px_10px_#6f6c6c]">
             <form action="courses.html">
-                <h1>Update Course</h1>
+                <h1 class="text-3xl font-bold text-center font-[Verdana,Geneva,Tahoma,sans-serif] text-[#9333EA]">Update Course</h1>
 
-                <Label for="name">Course Name : </Label>
-                <input type="text" id="name" placeholder="Enter course name "required>
+                <Label class="my-[10px] block" for="name">Course Name : </Label>
+                <input class="box-border bg-white w-full rounded-[5px] border border-black p-[10px]" type="text" id="name" placeholder="Enter course name "required>
                 
-                <label for="type">Course Type : </label>
-                <select name="course" id="type" required>
+                <label class="my-[10px] block" for="type">Course Type : </label>
+                <select class="box-border bg-white w-full rounded-[5px] border border-black p-[10px]" name="course" id="type" required>
                     <option value="c1">Self-paced</option>
                     <option value="c2">Aidded</option>
                     <option value="c3">Govt</option>
                 </select>
                 
-                <label for="desc">Description : </label>
-                <textarea id="desc" rows="5" cols="30" placeholder="Enter a brief description"></textarea>
+                <label class="my-[10px] block" for="desc">Description : </label>
+                <textarea class="box-border bg-white w-full rounded-[5px] border border-black p-[10px]" id="desc" rows="5" cols="30" placeholder="Enter a brief description"></textarea>
                 
                 
-                <label for="price">Price :</label> 
-                <select name="price" id="price" required>
+                <label class="my-[10px] block" for="price">Price :</label> 
+                <select class="box-border bg-white w-full rounded-[5px] border border-black p-[10px]" name="price" id="price" required>
                         <option value="p1">5000</option>
                         <option value="p2">7000</option>
                         <option value="p3">8000</option>
                         <option value="p4">10000</option>
                 </select>
                 
-                <div class="log">
-                    <input class="submit" type="submit" value="Update Course">
+                <div class="my-[20px] flex justify-center">
+                    <input class="w-full rounded-[50px] bg-[#9333EA] px-[30px] py-[10px] text-[15px] text-white" type="submit" value="Update Course">
                 </div>
             </form>
         </div>

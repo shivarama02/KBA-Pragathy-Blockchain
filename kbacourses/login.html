@@ -1,83 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <style>
-        body{
-            background-color: #F0BDE0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        } 
-        .login{
-            background-color: #ffffff;
-            padding: 20px;
-            margin-top: 150px;
-            width: 300px;
-            border-radius: 10px;
-            box-shadow: 0 5px 10px rgb(111, 108, 108);
-        }
-        h1{
-            text-align: center;
-            color: #9333EA;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        label{
-            display: block;
-            margin: 10px 0px;        
-        }
-        .intp{
-            padding: 10px;
-            border: 1px solid;
-            border-radius: 5px;
-            box-sizing: border-box;
-            width: 100%;
-        }
-        .log{
-            display: flex;
-            justify-content: space-between;
-            margin: 20px 0px;
-        }
-        .submit{
-            background-color: #9333EA;
-            padding: 10px 30px;
-            color: white;
-            font-size: 15px;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-        a{
-            text-decoration: none;
-            padding: 10px 0px;
-            color: #9333EA;
-        }
-        .btxt{
-            text-align: center;
-        }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <div class="login">
+<body class="flex items-center justify-center bg-[#F0BDE0]">
+    <div class="mt-[150px] w-[400px] rounded-[10px] bg-white p-[20px] shadow-[0_5px_10px_rgb(111,108,108)]">
         <form action="home.html">
-        <div>
-            <h1>Login</h1>
+            <h1 class="text-center font-[Verdana,Geneva,Tahoma,sans-serif] text-[#9333EA] text-3xl font-bold">Login</h1>
 
-            <label for="email">Email :</label>
-            <input class="intp" type="email" id="email" placeholder="Enter your email">
-            
-            <label for="password">Password : </label>
-            <input class="intp" type="password" id="password" placeholder="Enter your passowrd">
-            <div class="log">
-                <input class="submit" type="submit" value="Login">
-                <a href="Forgotpass.html">Forgot Password?</a>
+            <label for="email" class="my-[10px] block">Email :</label>
+            <input class="box-border w-full rounded-[5px] border border-black p-[10px]" type="email" id="email" placeholder="Enter your email">
+
+            <label for="password" class="my-[10px] block">Password :</label>
+            <input class="box-border w-full rounded-[5px] border border-black p-[10px]" type="password" id="password" placeholder="Enter you password">
+
+            <div class="my-[20px] flex justify-between">
+                <input class="cursor-pointer rounded-[10px] bg-[#9333EA] px-[30px] py-[10px] text-[15px] text-white" type="submit" value="Login">
+                <a href="Forgotpass.html" class="py-[10px] text-[#9333EA] no-underline">Forgot Password?</a>
             </div>
-            
-            <div class="btxt">
-                Don't have an Account? <a href="signup.html">Sign Up</a>
+
+            <div class="text-center">
+                Don't have an Account?
+                <a href="signup.html" class="py-[10px] text-[#9333EA] no-underline">Sign Up</a>
             </div>
-        </div>
         </form>
     </div>
 </body>
